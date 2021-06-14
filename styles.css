@@ -28,10 +28,12 @@ body {
 }
 
 /* footer */
+
 footer {
   background-color: var(--card-gray);
   border-top: 1px solid var(--border-gray);
   justify-content: space-between;
+  font-size: 14px;
 }
 
 footer a,
@@ -46,9 +48,43 @@ footer a:hover {
 .heart-footer:hover,
 .show-image-footer:hover,
 .queue-footer:hover,
-.system-footer:hover {
+.system-footer:hover,
+.speaker-on-footer:hover,
+.speaker-off-footer:hover,
+.expand-footer:hover,
+.shuffle-footer:hover,
+.previous-footer:hover,
+.next-footer:hover,
+.repeat-footer:hover {
   color: white;
 }
+
+/* Input range */
+
+/* input[type="range"]::range-track {
+  width: 100%;
+  height: 15px;
+  border-radius: 10px;
+  background-color: var(--reproduction-gray);
+  border: 2px solid #ccc;
+}
+
+input[type="range"]::range-thumb {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: white;
+  border: 2px solid var(--white-gray);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+}
+
+input[type="range"]::range-progress {
+  height: 20px;
+  border-radius: 10px 0 0 10px;
+  background-color: var(--buttons-green);
+  border: 2px solid var(--buttons-green);
+}
+ */
 
 /* song playing section */
 
@@ -58,6 +94,51 @@ footer a:hover {
 
 /* Volume section */
 
-.volume-footer {
+.volume-section-footer {
   align-items: center;
+}
+
+#volume-range {
+  width: 100px;
+}
+
+/* controls footer */
+
+.controls-footer {
+  flex-direction: column;
+  align-items: center;
+}
+
+.play-pause {
+  background-color: var(--white-gray);
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  padding: 10px;
+}
+
+.play-pause:hover {
+  width: 37px;
+  height: 37px;
+}
+
+.play-footer,
+.pause-footer {
+  color: #181818;
+}
+
+/* song timer */
+
+.song-timer-container {
+  align-items: center;
+}
+
+.song-timer-container span {
+  color: var(--white-gray);
+}
+
+#song-timer {
+  width: 700px;
 }

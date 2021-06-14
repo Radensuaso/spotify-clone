@@ -32,11 +32,18 @@
       crossorigin="anonymous"
     ></script>
 
+    <!-- boot strap icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+
     <title>Spotify Clone</title>
   </head>
   <body>
     <!-- Footer icons -->
     <footer class="d-flex p-3">
+      <!-- Song currently playing section -->
       <div class="song-playing-footer d-flex">
         <img
           class="pr-3"
@@ -57,13 +64,72 @@
           ></span>
         </div>
       </div>
-      <div class="controls-footer d-flex"></div>
-      <div class="volume-footer d-flex">
+      <!-- controls section -->
+      <div class="controls-footer d-flex">
+        <div class="controls-icons">
+          <span class="footer-icons shuffle-footer pr-3"
+            ><i class="fas fa-random"></i
+          ></span>
+          <span class="footer-icons previous-footer pr-3"
+            ><i class="fas fa-step-backward"></i
+          ></span>
+          <div class="d-inline-block pr-3">
+            <div class="play-pause d-flex">
+              <span class="footer-icons play-footer"
+                ><i class="fas fa-play"></i
+              ></span>
+              <span class="footer-icons pause-footer d-none"
+                ><i class="fas fa-pause"></i
+              ></span>
+            </div>
+          </div>
+          <span class="footer-icons next-footer pr-3"
+            ><i class="fas fa-step-forward"></i
+          ></span>
+          <span class="footer-icons repeat-footer"
+            ><i class="bi bi-arrow-repeat"></i
+          ></span>
+        </div>
+        <div class="song-timer-container mt-3">
+          <span class="small pr-2">0:00</span
+          ><input
+            type="range"
+            min="1"
+            max="100"
+            value="50"
+            class="slider mb-n1"
+            id="song-timer"
+          />
+          <span class="small pl-2">5:54</span>
+        </div>
+      </div>
+      <!-- Volume controls section -->
+      <div class="volume-section-footer d-flex">
         <span class="footer-icons queue-footer pr-3"
           ><i class="fas fa-list-ol"></i
         ></span>
         <span class="footer-icons system-footer pr-3"
-          ><i class="fas fa-desktop"></i
+          ><i class="bi bi-speaker"></i
+        ></span>
+        <!-- adding two volume speaker icons to toggle them on and off depending on click -->
+        <span class="footer-icons speaker-on-footer pr-3"
+          ><i class="fas fa-volume-down"></i
+        ></span>
+        <span class="footer-icons speaker-off-footer pr-3 d-none"
+          ><i class="fas fa-volume-mute"></i
+        ></span>
+        <span class="pr-3">
+          <input
+            type="range"
+            min="1"
+            max="100"
+            value="50"
+            class="slider"
+            id="volume-range"
+          />
+        </span>
+        <span class="footer-icons expand-footer pr-3"
+          ><i class="fas fa-expand-alt"></i
         ></span>
       </div>
     </footer>
