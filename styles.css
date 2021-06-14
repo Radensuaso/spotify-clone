@@ -31,6 +31,7 @@ body {
 footer {
   background-color: var(--card-gray);
   border-top: 1px solid var(--border-gray);
+  justify-content: space-between;
 }
 
 footer a,
@@ -43,10 +44,20 @@ footer a:hover {
 }
 
 .heart-footer:hover,
-.show-image-footer:hover {
+.show-image-footer:hover,
+.queue-footer:hover,
+.system-footer:hover {
   color: white;
 }
 
+/* song playing section */
+
 .song-playing-footer {
+  align-items: center;
+}
+
+/* Volume section */
+
+.volume-footer {
   align-items: center;
 }
