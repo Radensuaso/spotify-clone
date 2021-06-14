@@ -151,6 +151,10 @@ input[type="range"]:focus::-webkit-slider-track {
   width: 100px;
 }
 
+.speaker-container {
+  width: 22px;
+}
+
 /* controls footer */
 
 .controls-footer {
@@ -169,8 +173,7 @@ input[type="range"]:focus::-webkit-slider-track {
 }
 
 .play-pause:hover {
-  width: 37px;
-  height: 37px;
+  padding: 19px;
 }
 
 .play-footer,
@@ -185,5 +188,6 @@ input[type="range"]:focus::-webkit-slider-track {
 }
 
 #song-timer {
-  width: 700px;
+  min-width: 40vh;
+  max-width: 50vh;
 }

@@ -27,11 +27,20 @@ window.onload = function () {
   })
 
   /* range bar */
+  const inputRangeArray = document.querySelectorAll(".slider")
 
-  el.addEventListener("change", (e) => {
-    el.style.setProperty("--value", el.value)
-    el.style.setProperty("--min", el.min === "" ? "0" : el.min)
-    el.style.setProperty("--max", el.max === "" ? "100" : el.max)
-    el.style.setProperty("--value", el.value)
-  })
+  for (const inputRange of inputRangeArray) {
+    inputRange.addEventListener("change", (e) => {
+      inputRange.style.setProperty("--value", inputRange.value)
+      inputRange.style.setProperty(
+        "--min",
+        inputRange.min === "" ? "0" : inputRange.min
+      )
+      inputRange.style.setProperty(
+        "--max",
+        inputRange.max === "" ? "100" : inputRange.max
+      )
+      inputRange.style.setProperty("--value", inputRange.value)
+    })
+  }
 }
