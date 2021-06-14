@@ -26,7 +26,25 @@ window.onload = function () {
     speakerOff.classList.toggle("d-none")
   })
 
-  /* range bar */
+  /*function to toggle clicked green on and off */
+
+  function toggleClickedGreen(event) {
+    event.currentTarget.classList.toggle("clicked-green")
+  }
+
+  /* shuffle icon to green when clicked */
+  const shuffle = document.querySelector(".shuffle-footer")
+  shuffle.addEventListener("click", toggleClickedGreen)
+
+  /* repeat icon to green when clicked */
+  const repeat = document.querySelector(".repeat-footer")
+  repeat.addEventListener("click", toggleClickedGreen)
+
+  /* queue icon to green when clicked*/
+  const queue = document.querySelector(".queue-footer")
+  queue.addEventListener("click", toggleClickedGreen)
+
+  /* range bars */
   const inputRangeArray = document.querySelectorAll(".slider")
 
   for (const inputRange of inputRangeArray) {

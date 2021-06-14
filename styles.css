@@ -57,9 +57,9 @@ footer a:hover {
 .speaker-on-footer:hover,
 .speaker-off-footer:hover,
 .expand-footer:hover,
-.shuffle-footer:hover,
 .previous-footer:hover,
 .next-footer:hover,
+.shuffle-footer:hover,
 .repeat-footer:hover {
   color: white;
 }
@@ -179,6 +179,11 @@ input[type="range"]:focus::-webkit-slider-track {
 .play-footer,
 .pause-footer {
   color: #181818;
+}
+
+.clicked-green {
+  color: var(--buttons-green) !important;
+  text-decoration: underline dotted var(--buttons-green) !important;
 }
 
 /* song timer */
