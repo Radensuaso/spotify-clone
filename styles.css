@@ -15,10 +15,38 @@
   --purple-rhapsody: #a73a87;
   /* Artist page */
   --artist-gray: #424b54;
+  /* Card gray */
+  --card-gray: #181818;
+  /* borders */
+  --border-gray: #282828;
 }
 
 /* Common */
 
 body {
   font-family: "Inter", sans-serif;
+}
+
+/* footer */
+footer {
+  background-color: var(--card-gray);
+  border-top: 1px solid var(--border-gray);
+}
+
+footer a,
+footer a:hover {
+  color: white;
+}
+
+.footer-icons {
+  color: var(--white-gray);
+}
+
+.heart-footer:hover,
+.show-image-footer:hover {
+  color: white;
+}
+
+.song-playing-footer {
+  align-items: center;
 }
