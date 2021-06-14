@@ -1,0 +1,24 @@
+/* variables */
+
+:root {
+  /* Login page color */
+  --face-blue: #3b5998;
+  --spotify-green: #15883e;
+  /* comon colors */
+  --bg-black: #121212;
+  --reproduction-gray: #535353;
+  --buttons-green: #1db854;
+  --white-gray: #b3b3b3;
+  /* Home colors */
+  --dark-red: #552827;
+  /* Album page */
+  --purple-rhapsody: #a73a87;
+  /* Artist page */
+  --artist-gray: #424b54;
+}
+
+/* Common */
+
+body {
+  font-family: "Inter", sans-serif;
+}
