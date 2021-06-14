@@ -66,30 +66,74 @@ footer a:hover {
 
 /* Input range */
 
-/* input[type="range"]::range-track {
+input[type="range"] {
+  height: 3px;
   width: 100%;
-  height: 15px;
-  border-radius: 10px;
-  background-color: var(--reproduction-gray);
-  border: 2px solid #ccc;
+  -webkit-appearance: none;
+  cursor: pointer;
 }
 
-input[type="range"]::range-thumb {
-  width: 40px;
-  height: 40px;
-  border-radius: 100%;
-  background-color: white;
-  border: 2px solid var(--white-gray);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+input[type="range"] {
+  --range: calc(var(--max) - var(--min));
+  --ratio: calc((var(--value) - var(--min)) / var(--range));
+  --sx: calc(0.5 * 10px + var(--ratio) * (100% - 10px));
 }
 
-input[type="range"]::range-progress {
-  height: 20px;
-  border-radius: 10px 0 0 10px;
-  background-color: var(--buttons-green);
-  border: 2px solid var(--buttons-green);
+input[type="range"]:focus {
+  outline: none;
 }
- */
+
+input[type="range"]::-webkit-slider-thumb {
+  width: 10px;
+  height: 10px;
+  border-radius: 1em;
+  background: white;
+  border: none;
+  box-shadow: 0 0 2px black;
+  margin-top: calc(3px * 0.5 - 10px * 0.5);
+  opacity: 0;
+  -webkit-appearance: none;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 3px;
+  border-radius: 0.5em;
+  border: none;
+  box-shadow: none;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  background: white;
+}
+
+input[type="range"]:hover::-webkit-slider-thumb {
+  opacity: 1;
+}
+
+input[type="range"]::-webkit-slider-thumb:active {
+  background: white;
+}
+
+input[type="range"]:active::-webkit-slider-runnable-track {
+  background: #32aa56;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  background: linear-gradient(#fff, #fff) 0 / var(--sx) 100% no-repeat, #535353;
+}
+
+input[type="range"]:hover::-webkit-slider-runnable-track {
+  background: linear-gradient(#32aa56, #32aa56) 0 / var(--sx) 100% no-repeat,
+    #535353;
+}
+
+input[type="range"]:active::-webkit-slider-runnable-track {
+  background: linear-gradient(#32aa56, #32aa56) 0 / var(--sx) 100% no-repeat,
+    #535353;
+}
+input[type="range"]:focus::-webkit-slider-track {
+  background-color: #32aa56;
+}
 
 /* song playing section */
 

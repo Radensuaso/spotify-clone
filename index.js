@@ -25,4 +25,13 @@ window.onload = function () {
     speakerOn.classList.toggle("d-none")
     speakerOff.classList.toggle("d-none")
   })
+
+  /* range bar */
+
+  el.addEventListener("change", (e) => {
+    el.style.setProperty("--value", el.value)
+    el.style.setProperty("--min", el.min === "" ? "0" : el.min)
+    el.style.setProperty("--max", el.max === "" ? "100" : el.max)
+    el.style.setProperty("--value", el.value)
+  })
 }
