@@ -22,3 +22,133 @@
 body {
   font-family: "Inter", sans-serif;
 }
+
+.header {
+  width: 20%;
+  height: 100vh;
+  background: var(--bg-black);
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  /* align-items: center; */
+  /* justify-content: center; */
+  margin-right: 5px;
+  font-size: 14px;
+}
+
+.header nav {
+  /* margin-right: 50px; */
+  position: relative;
+}
+
+nav ul {
+  padding: 0;
+}
+.logo svg {
+  width: 50%;
+  color: white;
+  margin-left: 30px;
+}
+
+.header ul {
+  list-style: none;
+}
+
+.header ul li a,
+.header ul div a,
+.header p a {
+  text-decoration: none;
+  color: var(--white-gray);
+  text-align: center;
+  /* margin-bottom: 20px; */
+  z-index: 10;
+  padding-left: 20px;
+  padding-bottom: 15px;
+}
+
+.header ul li a:hover,
+.header ul div a:hover,
+.header p a:hover {
+  color: white;
+  z-index: 10;
+}
+
+.header ul li a i,
+.header div a button span {
+  padding-right: 30px !important;
+  /* padding: 20px; */
+  /* height: 20%; */
+  /* z-index: 10; */
+}
+
+header .middle-ul {
+  padding: 0;
+  margin-top: 20px;
+}
+
+header .middle-ul li {
+  padding-left: 20px;
+  padding-bottom: 15px;
+}
+.download {
+  /* align-self: flex-end; */
+  margin-top: 50%;
+  /* text-align: center; */
+  margin-left: 15px;
+}
+
+.header ul li {
+  /* padding-top: 10px; */
+  z-index: 10;
+}
+
+.header nav div ul li i {
+  width: 50px;
+  z-index: 10;
+}
+.btn-plus {
+  border: none;
+  border-radius: 1px;
+}
+
+.btn-heart {
+  color: white;
+  border: none;
+  background: rgb(57, 24, 169);
+  background: linear-gradient(
+    108deg,
+    rgba(57, 24, 169, 1) 18%,
+    rgba(112, 124, 156, 1) 56%
+  );
+}
+
+.navbar-active {
+  background: var(--reproduction-gray);
+
+  opacity: 0.4;
+
+  border-radius: 5px;
+}
+
+.border-top {
+  width: 90%;
+  margin-left: 20px;
+  border-top: 0.2px solid #dee2e6 !important;
+}
+
+.middle-ul {
+  /* text-align: left !important; */
+}
+/* .middle-ul li {
+  height: 50px;
+} */
+.middle-ul li a {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  /* -webkit-box-orient: horizontal; */
+  overflow: hidden;
+
+  padding-bottom: 0 !important;
+  text-align: left !important;
+}
