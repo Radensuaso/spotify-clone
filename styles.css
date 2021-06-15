@@ -552,3 +552,55 @@ div.shows-to-try-homepage {
 .rounded {
   border-radius: 0.5rem !important;
 }
+
+/* Artist page */
+
+/* Artist Nav */
+
+div#artist-nav-container {
+  padding-left: 20%;
+}
+
+/* Artist Header */
+
+div#artist-header-container {
+  margin-left: 20%;
+  color: white;
+  background: url("assets/queen-cover.png") #0a0304 center;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  height: 350px;
+}
+
+div#artist-header-container div.d-flex {
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+div#artist-header-container div.d-flex p.verified-artist {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+div#artist-header-container div.d-flex p.verified-artist span {
+  color: #2e77d0;
+  font-size: 16px;
+}
+
+div#artist-header-container div.d-flex h1 {
+  font-size: 96px;
+  line-height: 96px;
+  font-weight: 900;
+}
+
+div#artist-header-container div.d-flex p.listeners {
+  font-size: 16px;
+  line-height: 32px;
+}
+
+/* Artist popular */
+
+main#artist-main-container {
+}
