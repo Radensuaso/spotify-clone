@@ -1,0 +1,42 @@
+body{
+    font-family: "Inter", sans-serif;
+}
+
+div.logo{
+    height: fit-content;
+}
+
+div.logo img{
+    height: 9rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+hr{
+    margin: 0;
+    border-top: 1px solid #b3b3b3;
+}
+
+.container-form{
+    max-width: 450px;
+    margin: auto;
+    height: fit-content;
+    text-align: center;
+}
+
+.container-form #top-p{
+    font-weight: 700;
+    padding-top: 2rem;
+}
+
+div.or{
+    padding-top: 2rem;
+}
+
+p.footer{
+    font-size: 11px;
+}
+
+p.footer span{
+    color: #1db854;
+}
