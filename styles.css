@@ -141,8 +141,9 @@ header .middle-ul li {
 
   padding-bottom: 0 !important;
   text-align: left !important;
-  
-  /* footer */
+}
+
+/* footer */
 
 footer {
   position: fixed;
