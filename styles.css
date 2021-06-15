@@ -25,6 +25,7 @@
 
 body {
   font-family: "Inter", sans-serif;
+  background-color: var(--bg-black);
 }
 
 /*Header*/
@@ -325,7 +326,6 @@ input[type="range"]:focus::-webkit-slider-track {
   height: 100vh;
   position: absolute;
   right: 0;
-  background-color: var(--bg-black);
 }
 
 .heading-homepage {
