@@ -1,16 +1,24 @@
 /* window on load */
 window.onload = function () {
   /* get play and pause div*/
-  const playPause = document.querySelector("div.play-pause")
+  const playPauseArray = document.querySelectorAll("div.play-pause")
 
   /* function to toggle play and pause button */
-  playPause.addEventListener("click", function togglePlayPause() {
-    const play = document.querySelector("div.play-pause .play-footer")
-    const pause = document.querySelector("div.play-pause .pause-footer")
-    play.classList.toggle("d-none")
-    pause.classList.toggle("d-none")
-  })
+  for (const playPause of playPauseArray) {
+    playPause.addEventListener("click", function togglePlayPause() {
+      const playArray = document.querySelectorAll("div.play-pause .play-footer")
+      const pauseArray = document.querySelectorAll(
+        "div.play-pause .pause-footer"
+      )
+      for (const play of playArray) {
+        play.classList.toggle("d-none")
+      }
 
+      for (const pause of pauseArray) {
+        pause.classList.toggle("d-none")
+      }
+    })
+  }
   /* get speaker div */
   const speakerOnOff = document.querySelector("div.speaker-container")
 

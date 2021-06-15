@@ -160,8 +160,46 @@
       </div>
     </div>
 
-    <!-- Artist popular-->
-    <div id="artist-popular-container"></div>
+    <!-- main part of the page -->
+    <main>
+      <!-- Artist popular-->
+      <div id="artist-popular-container">
+        <div class="play-pause-follow d-flex pl-4 pt-4">
+          <div class="play-pause play-pause-pages mr-4 d-flex">
+            <span class="play-footer play-pages"
+              ><i class="fas fa-play"></i
+            ></span>
+            <span class="pause-footer pause-pages d-none"
+              ><i class="fas fa-pause"></i
+            ></span>
+          </div>
+          <div class="mr-4">
+            <button type="button" class="btn btn-outline-light">Follow</button>
+          </div>
+          <div class="three-dots-dropdown">
+            <div class="dropdown">
+              <button
+                class="btn btn-outline-light border-0 dropdown-toggle"
+                type="button"
+                id="three-dots-dropdown"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                ...
+              </button>
+              <div class="dropdown-menu" aria-labelledby="three-dots-dropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Separated link</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
 
     <footer class="d-flex p-3">
       <!-- Song currently playing section -->

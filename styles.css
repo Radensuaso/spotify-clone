@@ -553,12 +553,32 @@ div.shows-to-try-homepage {
   border-radius: 0.5rem !important;
 }
 
+/* play and pause common to artist and album */
+
+.play-pause-pages {
+  font-size: 20px;
+  padding: 30px;
+  background-color: var(--buttons-green);
+}
+
+.play-pages {
+  color: white;
+}
+
+.pause-pages {
+  color: white;
+}
+
+.play-pause-pages:hover {
+  padding: 32px;
+}
+
 /* Artist page */
 
 /* Artist Nav */
 
 div#artist-nav-container {
-  padding-left: 20%;
+  margin-left: 20%;
 }
 
 /* Artist Header */
@@ -600,7 +620,38 @@ div#artist-header-container div.d-flex p.listeners {
   line-height: 32px;
 }
 
+/*Main part of the artist page*/
+main {
+  width: 100%;
+  background: rgb(18, 18, 18);
+  background: linear-gradient(
+    0deg,
+    rgba(18, 18, 18, 1) 42%,
+    rgba(77, 5, 10, 1) 100%
+  );
+}
+
 /* Artist popular */
 
-main#artist-main-container {
+div#artist-popular-container {
+  color: white;
+  margin-left: 20%;
+}
+
+/* Play pause follow section */
+
+div#artist-popular-container div.play-pause-follow {
+  align-items: center;
+}
+
+#three-dots-dropdown {
+  font-size: 30px;
+}
+
+.dropdown-menu {
+  background-color: var(--border-gray);
+}
+
+.dropdown-menu a {
+  color: white;
 }
