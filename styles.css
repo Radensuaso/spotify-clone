@@ -326,11 +326,23 @@ input[type="range"]:focus::-webkit-slider-track {
   height: 950px;
   position: absolute;
   right: 0;
+  background: rgb(85,40,39);
+  background: linear-gradient(180deg, rgba(85,40,39,1) 0%, transparent 30%);
+}
+
+#fixed-nav-homepage{
+  background-color: transparent;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 3.5rem;
+  z-index: 2;
+  height: 4.5rem;
 }
 
 .heading-homepage {
   height: fit-content;
-  background: linear-gradient(#552827, #121212);
 }
 
 div#top-buttons-homepage {
@@ -430,6 +442,11 @@ a.dropdown-item:hover{
   padding-right: 0px;
 }
 
+.onscroll{
+  background-color: #181818ef !important;
+  height: 4rem !important;
+}
+
 a#dropdownMenuLink {
   max-width: 13rem;
   border-radius: 2rem;
@@ -481,6 +498,16 @@ div.col.good-morning {
   overflow: hidden;
 }
 
+#nymph{
+  font-size: 12px;
+  margin: 0;
+  font-weight: 600;
+  display: -webkit-box;
+  -webkit-line-clamp: 1 !important;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
 #recently-played{
   height: fit-content;
 }
@@ -524,7 +551,7 @@ p.recently-played-homepage:hover{
 
 #recently-played div.card-homepage:hover::after{
   opacity: 1;
-  top: 5rem;
+  top: 5.5rem;
 }
 
 #recently-played div.card-homepage {
@@ -650,4 +677,44 @@ div.shows-to-try-homepage {
 
 .rounded {
   border-radius: 0.5rem !important;
+}
+
+@media screen and (max-width: 1551px){
+
+  #recently-played div.card-homepage::after{
+    top: 5rem;
+  }
+
+  #recently-played div.card-homepage:hover::after{
+    top: 4rem;
+  }
+
+}
+
+@media screen and (max-width: 1440px){
+
+  #recently-played div.card-homepage::after{
+    top: 5rem;
+    right: 1.5rem;
+    background-size: 2rem 2rem;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  #recently-played div.card-homepage:hover::after{
+    top: 4.5rem;
+  }
+
+}
+
+@media screen and (max-width: 1235px){
+
+  #recently-played div.card-homepage::after{
+    top: 4rem;
+  }
+
+  #recently-played div.card-homepage:hover::after{
+    top: 3rem;
+  }
+
 }
