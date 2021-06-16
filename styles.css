@@ -634,22 +634,22 @@ main {
 
 /* Artist popular */
 
-div#artist-popular-container {
+div.artist-containers {
   color: white;
   margin-left: 20%;
 }
 
 /* Play pause follow section */
 
-div#artist-popular-container div.play-pause-follow {
+div.artist-containers div.play-pause-follow {
   align-items: center;
 }
 
-#three-dots-dropdown {
+/* three dots drop down */
+
+.three-dots-dropdown button {
   font-size: 30px;
 }
-
-/* three dots drop down */
 
 .three-dots-dropdown {
   display: inline-block;
@@ -693,7 +693,7 @@ div#artist-popular-container div.play-pause-follow {
 
 /*Popular songs Table  */
 
-h2.popular-title {
+h3.artist-h3 {
   font-size: 24px;
   font-weight: 700;
 }
@@ -703,7 +703,7 @@ h2.popular-title {
 }
 
 .popular-table table img {
-  width: 35px;
+  width: 40px;
   display: inline-block;
 }
 
@@ -715,12 +715,55 @@ h2.popular-title {
   overflow: hidden;
 }
 
-.popular-table tr {
-  border-radius: 4px !important;
-}
-
 .popular-table tr:hover {
   background-color: rgba(75, 75, 75, 0.5);
 }
 
-/* collapse  */
+/* Artist Pick */
+div.artist-pick div.d-flex > img {
+  width: 100px;
+  height: 100px;
+}
+
+div.artist-pick div.d-flex div p img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+div.artist-pick div.d-flex div p.playlist {
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--white-gray);
+}
+
+h4.best-of a {
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* Artist common rows */
+/* cards */
+.artist-song-cards {
+  background-color: var(--card-gray);
+}
+
+.artist-song-cards .card-body h5 {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.artist-song-cards .card-body h5 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.artist-song-cards .card-body p {
+  color: var(--white-gray);
+}
