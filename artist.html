@@ -174,7 +174,9 @@
             ></span>
           </div>
           <div class="mr-4">
-            <button type="button" class="btn btn-outline-light">Follow</button>
+            <button type="button follow-button" class="btn btn-outline-light">
+              Follow
+            </button>
           </div>
           <div class="three-dots-dropdown">
             <div class="dropdown">
@@ -189,11 +191,11 @@
                 ...
               </button>
               <div class="dropdown-menu" aria-labelledby="three-dots-dropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
+                <a class="dropdown-item" href="#">Follow</a>
+                <a class="dropdown-item" href="#">Go to artist Radio</a>
+                <a class="dropdown-item" href="#">Share</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Separated link</a>
+                <a class="dropdown-item" href="#">Open in Desktop App</a>
               </div>
             </div>
           </div>
@@ -206,8 +208,9 @@
                 <tbody>
                   <tr>
                     <th class="border-0" scope="row">
-                      <span>
-                        1
+                      <span class="popular-table-heading">
+                        <span class="popular-number"> 1 </span>
+                        <span class="d-none"><i class="fas fa-play"></i></span>
                         <img
                           class="mx-2"
                           src="assets/artist-page/popular-songs-1.jpg"
@@ -218,12 +221,61 @@
                       </span>
                     </th>
                     <td class="border-0">1,033,746,485</td>
-                    <td class="border-0">3:34</td>
+                    <td class="border-0">
+                      <span class="like-poupular d-none"
+                        ><i class="far fa-heart"></i
+                      ></span>
+                      <span class="poupular-time ml-2">3:34 </span>
+                      <div class="three-dots-dropdown popular-dots d-none">
+                        <div class="dropdown">
+                          <button
+                            class="
+                              btn btn-outline-light
+                              border-0
+                              dropdown-toggle
+                            "
+                            type="button"
+                            id="three-dots-dropdown"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            ...
+                          </button>
+                          <div
+                            class="dropdown-menu"
+                            aria-labelledby="three-dots-dropdown"
+                          >
+                            <a class="dropdown-item" href="#">Add to queue</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#"
+                              >Go to song radio</a
+                            >
+                            <a class="dropdown-item" href="#">Go to album</a>
+                            <a class="dropdown-item" href="#">Show credits</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#"
+                              >Save to your Liked Songs</a
+                            >
+                            <a class="dropdown-item" href="#"
+                              >Add to playlist</a
+                            >
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Share</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#"
+                              >Open in Desktop app</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </td>
                   </tr>
                   <tr>
                     <th class="border-0" scope="row">
-                      <span>
-                        2
+                      <span class="popular-table-heading">
+                        <span class="popular-number"> 2 </span>
+                        <span class="d-none"><i class="fas fa-play"></i></span>
                         <img
                           class="mx-2"
                           src="assets/artist-page/popular-songs-2.jpg"
@@ -234,12 +286,61 @@
                       </span>
                     </th>
                     <td class="border-0">1,520,458,686</td>
-                    <td class="border-0">5:54</td>
+                    <td class="border-0">
+                      <span class="like-poupular d-none"
+                        ><i class="far fa-heart"></i
+                      ></span>
+                      <span class="poupular-time ml-2">5:54 </span>
+                      <div class="three-dots-dropdown popular-dots d-none">
+                        <div class="dropdown">
+                          <button
+                            class="
+                              btn btn-outline-light
+                              border-0
+                              dropdown-toggle
+                            "
+                            type="button"
+                            id="three-dots-dropdown"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            ...
+                          </button>
+                          <div
+                            class="dropdown-menu"
+                            aria-labelledby="three-dots-dropdown"
+                          >
+                            <a class="dropdown-item" href="#">Add to queue</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#"
+                              >Go to song radio</a
+                            >
+                            <a class="dropdown-item" href="#">Go to album</a>
+                            <a class="dropdown-item" href="#">Show credits</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#"
+                              >Save to your Liked Songs</a
+                            >
+                            <a class="dropdown-item" href="#"
+                              >Add to playlist</a
+                            >
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Share</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#"
+                              >Open in Desktop app</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </td>
                   </tr>
                   <tr>
                     <th class="border-0" scope="row">
-                      <span>
-                        3
+                      <span class="popular-table-heading">
+                        <span class="popular-number"> 3 </span>
+                        <span class="d-none"><i class="fas fa-play"></i></span>
                         <img
                           class="mx-2"
                           src="assets/artist-page/popular-songs-3.jpg"
@@ -250,12 +351,61 @@
                       </span>
                     </th>
                     <td class="border-0">1,081,609,423</td>
-                    <td class="border-0">3:29</td>
+                    <td class="border-0">
+                      <span class="like-poupular d-none"
+                        ><i class="far fa-heart"></i
+                      ></span>
+                      <span class="poupular-time ml-2">3:29 </span>
+                      <div class="three-dots-dropdown popular-dots d-none">
+                        <div class="dropdown">
+                          <button
+                            class="
+                              btn btn-outline-light
+                              border-0
+                              dropdown-toggle
+                            "
+                            type="button"
+                            id="three-dots-dropdown"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            ...
+                          </button>
+                          <div
+                            class="dropdown-menu"
+                            aria-labelledby="three-dots-dropdown"
+                          >
+                            <a class="dropdown-item" href="#">Add to queue</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#"
+                              >Go to song radio</a
+                            >
+                            <a class="dropdown-item" href="#">Go to album</a>
+                            <a class="dropdown-item" href="#">Show credits</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#"
+                              >Save to your Liked Songs</a
+                            >
+                            <a class="dropdown-item" href="#"
+                              >Add to playlist</a
+                            >
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Share</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#"
+                              >Open in Desktop app</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </td>
                   </tr>
                   <tr>
                     <th class="border-0" scope="row">
-                      <span>
-                        4
+                      <span class="popular-table-heading">
+                        <span class="popular-number"> 4 </span>
+                        <span class="d-none"><i class="fas fa-play"></i></span>
                         <img
                           class="mx-2"
                           src="assets/artist-page/popular-songs-4.jpg"
@@ -266,12 +416,61 @@
                       </span>
                     </th>
                     <td class="border-0">917,718,666</td>
-                    <td class="border-0">4:08</td>
+                    <td class="border-0">
+                      <span class="like-poupular d-none"
+                        ><i class="far fa-heart"></i
+                      ></span>
+                      <span class="poupular-time ml-2">4:08 </span>
+                      <div class="three-dots-dropdown popular-dots d-none">
+                        <div class="dropdown">
+                          <button
+                            class="
+                              btn btn-outline-light
+                              border-0
+                              dropdown-toggle
+                            "
+                            type="button"
+                            id="three-dots-dropdown"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            ...
+                          </button>
+                          <div
+                            class="dropdown-menu"
+                            aria-labelledby="three-dots-dropdown"
+                          >
+                            <a class="dropdown-item" href="#">Add to queue</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#"
+                              >Go to song radio</a
+                            >
+                            <a class="dropdown-item" href="#">Go to album</a>
+                            <a class="dropdown-item" href="#">Show credits</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#"
+                              >Save to your Liked Songs</a
+                            >
+                            <a class="dropdown-item" href="#"
+                              >Add to playlist</a
+                            >
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Share</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#"
+                              >Open in Desktop app</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </td>
                   </tr>
                   <tr>
                     <th class="border-0" scope="row">
-                      <span>
-                        5
+                      <span class="popular-table-heading">
+                        <span class="popular-number"> 5 </span>
+                        <span class="d-none"><i class="fas fa-play"></i></span>
                         <img
                           class="mx-2"
                           src="assets/artist-page/popular-songs-5.jpg"
@@ -282,12 +481,61 @@
                       </span>
                     </th>
                     <td class="border-0">717,530,425</td>
-                    <td class="border-0">2:02</td>
+                    <td class="border-0">
+                      <span class="like-poupular d-none"
+                        ><i class="far fa-heart"></i
+                      ></span>
+                      <span class="poupular-time ml-2">2:02 </span>
+                      <div class="three-dots-dropdown popular-dots d-none">
+                        <div class="dropdown">
+                          <button
+                            class="
+                              btn btn-outline-light
+                              border-0
+                              dropdown-toggle
+                            "
+                            type="button"
+                            id="three-dots-dropdown"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            ...
+                          </button>
+                          <div
+                            class="dropdown-menu"
+                            aria-labelledby="three-dots-dropdown"
+                          >
+                            <a class="dropdown-item" href="#">Add to queue</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#"
+                              >Go to song radio</a
+                            >
+                            <a class="dropdown-item" href="#">Go to album</a>
+                            <a class="dropdown-item" href="#">Show credits</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#"
+                              >Save to your Liked Songs</a
+                            >
+                            <a class="dropdown-item" href="#"
+                              >Add to playlist</a
+                            >
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Share</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#"
+                              >Open in Desktop app</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </td>
                   </tr>
                   <tr>
                     <th class="border-0" scope="row">
-                      <span>
-                        6
+                      <span class="popular-table-heading">
+                        <span class="popular-number"> 6 </span>
+                        <span class="d-none"><i class="fas fa-play"></i></span>
                         <img
                           class="mx-2"
                           src="assets/artist-page/popular-songs-6.jpg"
@@ -298,12 +546,61 @@
                       </span>
                     </th>
                     <td class="border-0">372,783,403</td>
-                    <td class="border-0">4:18</td>
+                    <td class="border-0">
+                      <span class="like-poupular d-none"
+                        ><i class="far fa-heart"></i
+                      ></span>
+                      <span class="poupular-time ml-2">4:18 </span>
+                      <div class="three-dots-dropdown popular-dots d-none">
+                        <div class="dropdown">
+                          <button
+                            class="
+                              btn btn-outline-light
+                              border-0
+                              dropdown-toggle
+                            "
+                            type="button"
+                            id="three-dots-dropdown"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            ...
+                          </button>
+                          <div
+                            class="dropdown-menu"
+                            aria-labelledby="three-dots-dropdown"
+                          >
+                            <a class="dropdown-item" href="#">Add to queue</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#"
+                              >Go to song radio</a
+                            >
+                            <a class="dropdown-item" href="#">Go to album</a>
+                            <a class="dropdown-item" href="#">Show credits</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#"
+                              >Save to your Liked Songs</a
+                            >
+                            <a class="dropdown-item" href="#"
+                              >Add to playlist</a
+                            >
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Share</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#"
+                              >Open in Desktop app</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </td>
                   </tr>
                   <tr>
                     <th class="border-0" scope="row">
-                      <span>
-                        7
+                      <span class="popular-table-heading">
+                        <span class="popular-number"> 7 </span>
+                        <span class="d-none"><i class="fas fa-play"></i></span>
                         <img
                           class="mx-2"
                           src="assets/artist-page/popular-songs-6.jpg"
@@ -314,12 +611,61 @@
                       </span>
                     </th>
                     <td class="border-0">309,934,986</td>
-                    <td class="border-0">5:48</td>
+                    <td class="border-0">
+                      <span class="like-poupular d-none"
+                        ><i class="far fa-heart"></i
+                      ></span>
+                      <span class="poupular-time ml-2">5:48 </span>
+                      <div class="three-dots-dropdown popular-dots d-none">
+                        <div class="dropdown">
+                          <button
+                            class="
+                              btn btn-outline-light
+                              border-0
+                              dropdown-toggle
+                            "
+                            type="button"
+                            id="three-dots-dropdown"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            ...
+                          </button>
+                          <div
+                            class="dropdown-menu"
+                            aria-labelledby="three-dots-dropdown"
+                          >
+                            <a class="dropdown-item" href="#">Add to queue</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#"
+                              >Go to song radio</a
+                            >
+                            <a class="dropdown-item" href="#">Go to album</a>
+                            <a class="dropdown-item" href="#">Show credits</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#"
+                              >Save to your Liked Songs</a
+                            >
+                            <a class="dropdown-item" href="#"
+                              >Add to playlist</a
+                            >
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Share</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#"
+                              >Open in Desktop app</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </td>
                   </tr>
                   <tr>
                     <th class="border-0" scope="row">
-                      <span>
-                        8
+                      <span class="popular-table-heading">
+                        <span class="popular-number"> 8 </span>
+                        <span class="d-none"><i class="fas fa-play"></i></span>
                         <img
                           class="mx-2"
                           src="assets/artist-page/popular-songs-5.jpg"
@@ -330,12 +676,61 @@
                       </span>
                     </th>
                     <td class="border-0">418,444,253</td>
-                    <td class="border-0">2:59</td>
+                    <td class="border-0">
+                      <span class="like-poupular d-none"
+                        ><i class="far fa-heart"></i
+                      ></span>
+                      <span class="poupular-time ml-2">2:59 </span>
+                      <div class="three-dots-dropdown popular-dots d-none">
+                        <div class="dropdown">
+                          <button
+                            class="
+                              btn btn-outline-light
+                              border-0
+                              dropdown-toggle
+                            "
+                            type="button"
+                            id="three-dots-dropdown"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            ...
+                          </button>
+                          <div
+                            class="dropdown-menu"
+                            aria-labelledby="three-dots-dropdown"
+                          >
+                            <a class="dropdown-item" href="#">Add to queue</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#"
+                              >Go to song radio</a
+                            >
+                            <a class="dropdown-item" href="#">Go to album</a>
+                            <a class="dropdown-item" href="#">Show credits</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#"
+                              >Save to your Liked Songs</a
+                            >
+                            <a class="dropdown-item" href="#"
+                              >Add to playlist</a
+                            >
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Share</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#"
+                              >Open in Desktop app</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </td>
                   </tr>
                   <tr>
                     <th class="border-0" scope="row">
-                      <span>
-                        9
+                      <span class="popular-table-heading">
+                        <span class="popular-number"> 9 </span>
+                        <span class="d-none"><i class="fas fa-play"></i></span>
                         <img
                           class="mx-2"
                           src="assets/artist-page/popular-songs-1.jpg"
@@ -346,12 +741,61 @@
                       </span>
                     </th>
                     <td class="border-0">364,176,986</td>
-                    <td class="border-0">2:43</td>
+                    <td class="border-0">
+                      <span class="like-poupular d-none"
+                        ><i class="far fa-heart"></i
+                      ></span>
+                      <span class="poupular-time ml-2">2:43 </span>
+                      <div class="three-dots-dropdown popular-dots d-none">
+                        <div class="dropdown">
+                          <button
+                            class="
+                              btn btn-outline-light
+                              border-0
+                              dropdown-toggle
+                            "
+                            type="button"
+                            id="three-dots-dropdown"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            ...
+                          </button>
+                          <div
+                            class="dropdown-menu"
+                            aria-labelledby="three-dots-dropdown"
+                          >
+                            <a class="dropdown-item" href="#">Add to queue</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#"
+                              >Go to song radio</a
+                            >
+                            <a class="dropdown-item" href="#">Go to album</a>
+                            <a class="dropdown-item" href="#">Show credits</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#"
+                              >Save to your Liked Songs</a
+                            >
+                            <a class="dropdown-item" href="#"
+                              >Add to playlist</a
+                            >
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Share</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#"
+                              >Open in Desktop app</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </td>
                   </tr>
                   <tr>
                     <th class="border-0" scope="row">
-                      <span>
-                        10
+                      <span class="popular-table-heading">
+                        <span class="popular-number"> 10 </span>
+                        <span class="d-none"><i class="fas fa-play"></i></span>
                         <img
                           class="mx-2"
                           src="assets/artist-page/popular-songs-7.jpg"
@@ -362,7 +806,55 @@
                       </span>
                     </th>
                     <td class="border-0">546,725,278</td>
-                    <td class="border-0">4:56</td>
+                    <td class="border-0">
+                      <span class="like-poupular d-none"
+                        ><i class="far fa-heart"></i
+                      ></span>
+                      <span class="poupular-time ml-2">4:56 </span>
+                      <div class="three-dots-dropdown popular-dots d-none">
+                        <div class="dropdown">
+                          <button
+                            class="
+                              btn btn-outline-light
+                              border-0
+                              dropdown-toggle
+                            "
+                            type="button"
+                            id="three-dots-dropdown"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            ...
+                          </button>
+                          <div
+                            class="dropdown-menu"
+                            aria-labelledby="three-dots-dropdown"
+                          >
+                            <a class="dropdown-item" href="#">Add to queue</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#"
+                              >Go to song radio</a
+                            >
+                            <a class="dropdown-item" href="#">Go to album</a>
+                            <a class="dropdown-item" href="#">Show credits</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#"
+                              >Save to your Liked Songs</a
+                            >
+                            <a class="dropdown-item" href="#"
+                              >Add to playlist</a
+                            >
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Share</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#"
+                              >Open in Desktop app</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </td>
                   </tr>
                 </tbody>
               </table>
@@ -491,5 +983,8 @@
 
     <!-- script for the navbar-->
     <script src="./navbar.js"></script>
+
+    <!-- Script for Artist Page -->
+    <script src="artist.js"></script>
   </body>
 </html>

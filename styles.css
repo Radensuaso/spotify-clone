@@ -627,7 +627,7 @@ main {
   background: rgb(18, 18, 18);
   background: linear-gradient(
     0deg,
-    rgba(18, 18, 18, 1) 97%,
+    rgba(18, 18, 18, 1) 84%,
     rgba(77, 5, 10, 1) 100%
   );
 }
@@ -649,12 +649,46 @@ div#artist-popular-container div.play-pause-follow {
   font-size: 30px;
 }
 
-.dropdown-menu {
+/* three dots drop down */
+
+.three-dots-dropdown {
+  display: inline-block;
+}
+
+.three-dots-dropdown button {
+  line-height: 0;
+  color: var(--white-gray);
+}
+
+.three-dots-dropdown button:hover {
+  background-color: transparent;
+  color: white;
+}
+
+.btn-outline-light:not(:disabled):not(.disabled).active,
+.btn-outline-light:not(:disabled):not(.disabled):active,
+.show > .btn-outline-light.dropdown-toggle {
+  color: white;
+  background-color: transparent;
+  border: 0;
+}
+
+.three-dots-dropdown .dropdown-menu {
   background-color: var(--border-gray);
+  color: var(--white-gray);
 }
 
 .dropdown-menu a {
+  color: var(--white-gray);
+}
+
+.dropdown-menu a:hover {
+  background-color: var(--reproduction-gray);
   color: white;
+}
+
+.dropdown-toggle::after {
+  content: none;
 }
 
 /*Popular songs Table  */
@@ -673,10 +707,20 @@ h2.popular-title {
   display: inline-block;
 }
 
-.popular-table th span {
+.popular-table th span.popular-table-heading {
   display: -webkit-box;
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   text-overflow: ellipsis;
   overflow: hidden;
 }
+
+.popular-table tr {
+  border-radius: 4px !important;
+}
+
+.popular-table tr:hover {
+  background-color: rgba(75, 75, 75, 0.5);
+}
+
+/* collapse  */
