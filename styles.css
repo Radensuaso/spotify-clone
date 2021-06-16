@@ -323,7 +323,7 @@ input[type="range"]:focus::-webkit-slider-track {
 
 .container-homepage {
   width: 80%;
-  height: 100vh;
+  height: 950px;
   position: absolute;
   right: 0;
 }
@@ -352,6 +352,7 @@ div#left-arrow {
   width: 2rem;
   border-radius: 1rem;
   background-color: rgba(0, 0, 0, 50%);
+  cursor: pointer;
 }
 
 div#left-arrow i {
@@ -360,6 +361,7 @@ div#left-arrow i {
   font-weight: 600;
   color: white;
   left: 8px;
+  
 }
 
 div#right-arrow {
@@ -370,6 +372,7 @@ div#right-arrow {
   width: 2rem;
   border-radius: 1rem;
   background-color: rgba(0, 0, 0, 30%);
+  cursor: not-allowed;
 }
 
 div#right-arrow i.disabled {
@@ -388,6 +391,34 @@ div#right-arrow i.disabled {
   color: white;
   opacity: 0.7;
   left: 10.5px;
+}
+
+.dropdown-menu{
+  background-color: #202020;
+  margin-top: 0.5rem;
+  width: 17rem;
+  margin-right: 1.3rem;
+}
+
+.dropdown-menu i{
+  color: #f1f1f1;
+}
+
+.dropdown-menu a{
+  margin-right: 2rem;
+}
+
+.dropdown a:hover{
+  background-color: #212121;
+  color: white;
+}
+
+.dropdown a{
+  color: white;
+}
+
+a.dropdown-item:hover{
+  background-color: #747474;
 }
 
 .btn-account {
@@ -422,6 +453,11 @@ div.col.good-morning {
   padding-right: 0.3rem;
 }
 
+.good-morning div.card-homepage:hover{
+  background-color:  rgba(255, 255, 255, 15%);
+  cursor: pointer;
+}
+
 .good-morning div.card-homepage {
   background-color: rgba(255, 255, 255, 6%);
   color: white;
@@ -445,6 +481,10 @@ div.col.good-morning {
   overflow: hidden;
 }
 
+#recently-played{
+  height: fit-content;
+}
+
 div.recently-played-homepage {
   align-items: baseline;
   color: white;
@@ -456,21 +496,56 @@ p.recently-played-homepage {
   color: #b3b3b3;
 }
 
-#recently-played .col {
-  padding-right: 0.3rem;
-  padding-left: 0.3rem;
+p.recently-played-homepage:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#recently-played img{
+  padding: 0.8rem;
+}
+
+#recently-played div.card-homepage::after{
+  content: "";
+  background-image: url(https://jccdallas.org/wp-content/uploads/2020/06/Spotify-Play-Button-1.png);
+  position: absolute;
+  background-size: 3rem 3rem;
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  top: 6rem;
+  right: 1.2rem;
+  z-index: 1;
+  opacity: 0;
+  border-radius: 1.5rem;
+  transition: opacity 0.2s ease;
+  transition: top 0.4s ease;
+}
+
+#recently-played div.card-homepage:hover::after{
+  opacity: 1;
+  top: 5rem;
 }
 
 #recently-played div.card-homepage {
   background-color: #181818;
   color: white;
-  height: 155px;
+  height: 100%;
+  border-radius: 0.3rem;
+}
+
+#recently-played div.card-homepage:hover{
+  background-color: #2c2c2c;
+  cursor: pointer;
 }
 
 #recently-played .card-body {
   display: flex;
   flex-direction: column;
-  padding: 5px;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+  padding-bottom: 0.3rem;
+  padding-top: 0.2rem;
 }
 
 #recently-played h6 {
@@ -514,12 +589,36 @@ div.shows-to-try-homepage {
   color: #b3b3b3;
 }
 
+.shows-to-try-homepage p:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#shows-homepage{
+  height: fit-content;
+}
+
 #shows-homepage .card-homepage {
+  border-radius: 0.3rem;
   background-color: #181818;
+  height: 100%;
+}
+
+#shows-homepage .card-homepage:hover{
+  background-color: #2c2c2c;
+  cursor: pointer;
+}
+
+#shows-homepage img{
+  padding: 0.8rem;
+  border-radius: 1.5rem;
 }
 
 #shows-homepage .card-body {
-  padding: 5px;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+  padding-top: 0;
+  padding-bottom: 0.4rem;
 }
 
 #shows-homepage h6 {
