@@ -771,3 +771,12 @@ h4.best-of a {
 .artist-song-cards .card-body p {
   color: var(--white-gray);
 }
+
+.play-artist-cards {
+  right: -20px;
+  bottom: 4px;
+}
+
+.artist-song-cards:hover {
+  background-color: var(--border-gray);
+}
