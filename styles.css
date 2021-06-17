@@ -623,7 +623,7 @@ div#artist-header-container div.d-flex p.listeners {
 /*Main part of the artist page*/
 main {
   width: 100%;
-  height: 3000px;
+  height: 3500px;
   background: rgb(18, 18, 18);
   background: linear-gradient(
     0deg,
@@ -793,4 +793,133 @@ div.fans-also-like div.position-relative .play-artist-cards {
 div.fans-also-like div.position-relative {
   border-radius: 50%;
   overflow: hidden;
+}
+
+/* About section */
+
+div.about-col div.position-relative {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+div.about-col div.position-relative::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: rgba(255, 255, 255, 0.2);
+  z-index: 5;
+}
+
+div.about-col div.position-relative img {
+  width: 100%;
+}
+
+div.about-col div.position-relative div.circular-badge {
+  color: white;
+  background-color: #2e77d0;
+  border-radius: 50%;
+  top: 35px;
+  right: 35px;
+  width: 90px;
+  height: 90px;
+  z-index: 6;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+div.about-col div.position-relative div.circular-badge span.place-world {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 0px;
+}
+
+div.about-col div.position-relative div.circular-badge span.in-the-world {
+  font-size: 11px;
+  line-height: 0px;
+}
+
+div.about-col div.position-relative div.about-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  left: 40px;
+  bottom: 40px;
+  text-shadow: 1px 1px 0px #000000;
+  z-index: 6;
+}
+
+div.about-col div.position-relative div.about-text p.listeners-about {
+  font-weight: 700;
+}
+
+div.about-col div.position-relative div.about-text p.queen-about {
+  width: 70%;
+}
+
+/* On Tour*/
+
+div.concert-date {
+  color: white;
+  background-color: #2a2a2a;
+  top: 35px;
+  right: 35px;
+  border-radius: 5px;
+  width: 75px;
+  height: 60px;
+  z-index: 6;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+div.concert-date span.concert-date-month {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 0px;
+}
+
+div.concert-date span.concert-date-day {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 0px;
+}
+
+div.artist-concerts
+  > div.d-flex
+  div.concert-date
+  + div.d-flex
+  p.concert-artist {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+div.artist-concerts > div.d-flex div.concert-date + div.d-flex p.concert-place {
+  font-size: 14px;
+
+  color: var(--white-gray);
+}
+
+div.artist-concerts > div.d-flex div.concert-date + div.d-flex div {
+  line-height: 16px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+div.artist-concerts a {
+  font-size: 14px;
+  color: var(--white-gray);
+  font-weight: 700;
+}
+
+div.artist-concerts {
+  cursor: pointer;
 }
