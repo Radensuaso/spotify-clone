@@ -772,11 +772,25 @@ h4.best-of a {
   color: var(--white-gray);
 }
 
+.artist-song-cards:hover {
+  background-color: var(--border-gray);
+}
+
+/* Play on hover cards */
+/* square images */
 .play-artist-cards {
   right: -20px;
   bottom: 4px;
 }
 
-.artist-song-cards:hover {
-  background-color: var(--border-gray);
+/* circular images */
+div.fans-also-like div.position-relative .play-artist-cards {
+  right: 0px;
+  bottom: 20px;
+}
+
+/* Fans Also like section */
+div.fans-also-like div.position-relative {
+  border-radius: 50%;
+  overflow: hidden;
 }
