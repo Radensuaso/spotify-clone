@@ -786,8 +786,8 @@ h4.best-of a {
 
 /* circular images */
 div.fans-also-like div.position-relative .play-artist-cards {
-  right: 0px;
-  bottom: 20px;
+  right: 15px;
+  bottom: 30px;
 }
 
 /* Fans Also like section */
