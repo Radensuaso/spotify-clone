@@ -752,6 +752,7 @@ h4.best-of a {
 /* cards */
 .artist-song-cards {
   background-color: var(--card-gray);
+  cursor: pointer;
 }
 
 .artist-song-cards .card-body h5 {
@@ -901,7 +902,6 @@ div.artist-concerts
 
 div.artist-concerts > div.d-flex div.concert-date + div.d-flex p.concert-place {
   font-size: 14px;
-
   color: var(--white-gray);
 }
 
@@ -922,4 +922,39 @@ div.artist-concerts a {
 
 div.artist-concerts {
   cursor: pointer;
+}
+
+/* offers */
+
+div.artist-offers img {
+  width: 80px;
+  height: 80px;
+}
+
+div.artist-offers > div.d-flex div {
+  line-height: 16px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+div.artist-offers > div.d-flex div p.artist-offer-title {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+div.artist-offers > div.d-flex div p.artist-offer-description {
+  font-size: 14px;
+  color: var(--white-gray);
+}
+
+div.artist-offers > div.d-flex {
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+div.artist-offers > div.d-flex:hover {
+  background-color: var(--border-gray);
 }
