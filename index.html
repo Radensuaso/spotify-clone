@@ -105,7 +105,9 @@
     </header>
 
     <div class="container-homepage">
-      <div class="heading-homepage px-3">
+
+      <div id="fixed-nav-homepage">
+
         <div class="row my-3" id="top-buttons-homepage">
           <div class="col-4 d-flex ml-4" style="color: white">
             <div id="left-arrow" class="mr-3">
@@ -115,7 +117,7 @@
               <i class="fas fa-chevron-right disabled"></i>
             </div>
           </div>
-
+  
           <div class="col-5">
             <div class="dropdown">
               <a
@@ -137,18 +139,25 @@
                   class="img-fluid mr-2"
                   style="max-width: 1.5rem; border-radius: 1rem"
                 />
-                <span id="name-account">Diego 'Zilba' BaNOVAZ</span>
+                <span id="name-account">Diego 'Zilba' Banovaz</span>
               </a>
-
+  
               <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
+                <div class="links mx-2">
+                  <a class="dropdown-item d-flex justify-content-between py-3" href="#">Account <i class="fas fa-external-link-alt"></i></a>
+                  <a class="dropdown-item py-3" href="#">Profile</a>
+                  <a class="dropdown-item py-3 d-flex justify-content-between" href="#">Upgrade to Premium <i class="fas fa-external-link-alt"></i></a>
+                  <a class="dropdown-item py-3" href="login.html">Log out</a>
+                </div>
               </div>
             </div>
           </div>
         </div>
 
+      </div>
+
+      <div class="heading-homepage px-3">
+        
         <h3 class="ml-3 pb-2" id="good-morning">Good Morning</h3>
 
         <div
@@ -287,7 +296,7 @@
                 </div>
                 <div class="col-8 d-flex align-items-center">
                   <div class="card-body">
-                    <h5 class="card-title">Nymphetamine</h5>
+                    <h5 class="card-title" id="nymph">Nymphetamine</h5>
                   </div>
                 </div>
               </div>
@@ -371,130 +380,209 @@
         </div>
 
         <div class="row row-cols-8 mx-2" id="recently-played">
-          <div class="col">
+
+          <div class="col px-2">
             <div class="card-homepage text-center">
-              <img
-                src="./assets/burning jazz.jpg"
-                class="card-img-top img-fluid mt-2 pb-1 rounded-0"
-                alt="image"
-                style="max-width: 90px"
-              />
-              <div class="card-body text-left">
-                <h6 class="card-text">Burning Jazz-rock Fusion</h6>
-                <p class="card-subtext">
-                  You'll find fiery, modern, groovy, jazz-rock
-                </p>
+              <div class="row">
+                <div class="col-12">
+                  <img
+                  src="/assets/burning jazz.jpg"
+                  class="card-img-top img-fluid rounded-0"
+                  alt="image"
+                />
+                </div>
+                
+                <div class="col-12">
+                  <div class="card-body text-left">
+                    <h6 class="card-text">Burning Jazz-rock Fusion</h6>
+                    <p class="card-subtext">
+                      You'll find fiery, modern, groovy, jazz-rock
+                    </p>
+                  </div>
+
+                </div>
               </div>
+              
             </div>
           </div>
 
-          <div class="col">
+          <div class="col px-2">
             <div class="card-homepage text-center">
-              <img
-                src="./assets/metal ballads.jpg"
-                class="card-img-top img-fluid mt-2 pb-1 rounded-0"
-                alt="image"
-                style="max-width: 90px"
-              />
-              <div class="card-body text-left">
-                <h6 class="card-text">Metal Ballads</h6>
-                <p class="card-subtext">
-                  A colection of the best metal ballads.
-                </p>
+              <div class="row">
+                <div class="col-12">
+                  <img
+                  src="/assets/metal ballads.jpg"
+                  class="card-img-top img-fluid rounded-0"
+                  alt="image"
+                />
+                </div>
+                
+                <div class="col-12">
+                  <div class="card-body text-left">
+                    <h6 class="card-text">Metal Ballads</h6>
+                    <p class="card-subtext">
+                      A collection of the best metal ballads.
+                    </p>
+                  </div>
+
+                </div>
+
               </div>
+              
             </div>
           </div>
 
-          <div class="col">
+          <div class="col px-2">
             <div class="card-homepage text-center">
-              <img
-                src="./assets/midian.jpg"
-                class="card-img-top img-fluid mt-2 pb-1 rounded-0"
-                alt="image"
-                style="max-width: 90px"
-              />
-              <div class="card-body text-left">
-                <h6 class="card-text">Midian</h6>
-                <p class="card-subtext">Cradle Of Filth</p>
+              <div class="row">
+                <div class="col-12">
+                  <img
+                  src="/assets/midian.jpg"
+                  class="card-img-top img-fluid rounded-0"
+                  alt="image"
+                />
+                </div>
+                
+                <div class="col-12">
+                  <div class="card-body text-left">
+                    <h6 class="card-text">Midian</h6>
+                    <p class="card-subtext">
+                      Cradle Of Filth
+                    </p>
+                  </div>
+
+                </div>
               </div>
+              
             </div>
           </div>
 
-          <div class="col">
+          <div class="col px-2">
             <div class="card-homepage text-center">
-              <img
-                src="./assets/liked-spotify.png"
-                class="card-img-top img-fluid mt-2 pb-1 rounded-0"
-                alt="image"
-                style="max-width: 90px"
-              />
-              <div class="card-body text-left">
-                <h6 class="card-text">Liked Songs</h6>
+              <div class="row">
+                <div class="col-12">
+                  <img
+                  src="/assets/liked-spotify.png"
+                  class="card-img-top img-fluid rounded-0"
+                  alt="image"
+                />
+                </div>
+                
+                <div class="col-12">
+                  <div class="card-body text-left">
+                    <h6 class="card-text">Liked Songs</h6>
+                    <p class="card-subtext">
+                      
+                    </p>
+                  </div>
+
+                </div>
+
               </div>
+              
             </div>
           </div>
 
-          <div class="col">
+          <div class="col px-2">
             <div class="card-homepage text-center">
-              <img
-                src="./assets/le-bask.png"
-                class="card-img-top img-fluid mt-2 pb-1 rounded-circle"
-                alt="image"
-                style="max-width: 90px"
-              />
-              <div class="card-body text-left">
-                <h6 class="card-text">LE BASK</h6>
-                <p class="card-subtext">Artist</p>
+              <div class="row">
+                <div class="col-12">
+                  <img
+                  src="/assets/le-bask.png"
+                  class="card-img-top img-fluid rounded-circle"
+                  alt="image"
+                />
+                </div>
+                
+                <div class="col-12">
+                  <div class="card-body text-left">
+                    <h6 class="card-text">LE BASK</h6>
+                    <p class="card-subtext">
+                      Artist
+                    </p>
+                  </div>
+
+                </div>
               </div>
+              
             </div>
           </div>
 
-          <div class="col">
+          <div class="col px-2">
             <div class="card-homepage text-center">
-              <img
-                src="./assets/post human.jpg"
-                class="card-img-top img-fluid mt-2 pb-1 rounded-0"
-                alt="image"
-                style="max-width: 90px"
-              />
-              <div class="card-body text-left">
-                <h6 class="card-text">POST HUMAN: SURVIVAL</h6>
-                <p class="card-subtext">Bring Me The Horizon</p>
+              <div class="row">
+                <div class="col-12">
+                  <img
+                  src="/assets/post human.jpg"
+                  class="card-img-top img-fluid rounded-0"
+                  alt="image"
+                />
+                </div>
+                
+                <div class="col-12">
+                  <div class="card-body text-left">
+                    <h6 class="card-text">POST HUMAN: SURVIVAL HORROR</h6>
+                    <p class="card-subtext">
+                      Bring Me The Horizon
+                    </p>
+                  </div>
+
+                </div>
               </div>
+              
             </div>
           </div>
 
-          <div class="col">
+          <div class="col px-2">
             <div class="card-homepage text-center">
-              <img
-                src="./assets/this is joe.jpg"
-                class="card-img-top img-fluid mt-2 pb-1 rounded-0"
-                alt="image"
-                style="max-width: 90px"
-              />
-              <div class="card-body text-left">
-                <h6 class="card-text">This is Joe Bonamassa</h6>
-                <p class="card-subtext">
-                  This is Joe Bonamossa. The essencial tracks, the
-                </p>
+              <div class="row">
+                <div class="col-12">
+                  <img
+                  src="/assets/this is joe.jpg"
+                  class="card-img-top img-fluid rounded-0"
+                  alt="image"
+                />
+                </div>
+                
+                <div class="col-12">
+                  <div class="card-body text-left">
+                    <h6 class="card-text">This is Joe Bonamossa</h6>
+                    <p class="card-subtext">
+                      This is Joe Bonamossa. The essencial tracks, all in one playlist.
+                    </p>
+                  </div>
+
+                </div>
               </div>
+              
             </div>
           </div>
 
-          <div class="col">
+          <div class="col px-2">
             <div class="card-homepage text-center">
-              <img
-                src="./assets/Nymphetamine_cover.jpg"
-                class="card-img-top img-fluid mt-2 pb-1 rounded-0"
-                alt="image"
-                style="max-width: 90px"
-              />
-              <div class="card-body text-left">
-                <h6 class="card-text">Nymphetamine</h6>
-                <p class="card-subtext">Cradle Of Filth</p>
+              <div class="row">
+                <div class="col-12">
+                  <img
+                  src="/assets/Nymphetamine_cover.jpg"
+                  class="card-img-top img-fluid rounded-0"
+                  alt="image"
+                />
+                </div>
+                
+                <div class="col-12">
+                  <div class="card-body text-left">
+                    <h6 class="card-text">Nymphetamine</h6>
+                    <p class="card-subtext">
+                      Cradle Of Filth
+                    </p>
+                  </div>
+
+                </div>
               </div>
+              
             </div>
           </div>
+
         </div>
 
         <div class="shows-to-try-homepage mt-4">
@@ -508,148 +596,212 @@
         </div>
 
         <div class="row row-cols-8 mx-2" id="shows-homepage">
-          <div class="col">
+
+          <div class="col px-2">
             <div class="card-homepage text-center">
-              <img
-                src="./assets/alessandro-barber.png"
-                class="card-img-top img-fluid mt-2 pb-1 rounded"
-                style="width: 90px"
-                alt="image"
-              />
-              <div class="card-body text-left">
-                <h6 class="card-text">Il podcast di Alessandro Barbiero</h6>
-                <p class="card-subtext">
-                  Lezioni e conferenze sulla Storia come non l'avete mai
-                  sentita.
-                </p>
+              <div class="row">
+                <div class="col-12">
+                  <img
+                  src="/assets/alessandro-barber.png"
+                  class="card-img-top img-fluid"
+                  alt="image"
+                 />
+                </div>
+                
+                <div class="col-12">
+                  <div class="card-body text-left">
+                    <h6 class="card-text">Il podcast di Alessandro Barbiero</h6>
+                    <p class="card-subtext">
+                      Lezioni e conferenze sulla Storia come non l'avete mai
+                      sentita.
+                    </p>
+                  </div>
+
+                </div>
               </div>
+              
             </div>
           </div>
 
-          <div class="col">
+          <div class="col px-2">
             <div class="card-homepage text-center">
-              <img
-                src="./assets/demoni-urbani.jpg"
-                class="card-img-top img-fluid mt-2 pb-1 rounded"
-                style="width: 90px"
-                alt="image"
-              />
-              <div class="card-body text-left">
-                <h6 class="card-text">Demoni Urbani</h6>
-                <p class="card-subtext">
-                  Anche le più belle città italiane hanno un cuore di tenebra.
-                </p>
+              <div class="row">
+                <div class="col-12">
+                  <img
+                  src="/assets/demoni-urbani.jpg"
+                  class="card-img-top img-fluid"
+                  alt="image"
+                 />
+                </div>
+                
+                <div class="col-12">
+                  <div class="card-body text-left">
+                    <h6 class="card-text">Demoni Urbani</h6>
+                    <p class="card-subtext">
+                      Anche le più belle città italiane hanno un cuore di tenebra.
+                    </p>
+                  </div>
+
+                </div>
               </div>
+              
             </div>
           </div>
 
-          <div class="col">
+          <div class="col px-2">
             <div class="card-homepage text-center">
-              <img
-                src="./assets/daily-cogito.jpg"
-                class="card-img-top img-fluid mt-2 pb-1 rounded"
-                style="width: 90px"
-                alt="image"
-              />
-              <div class="card-body text-left">
-                <h6 class="card-text">Daily Cogito</h6>
-                <p class="card-subtext">
-                  E chi non ascolta Daily Cogito è cibo per gli zombie.
-                </p>
+              <div class="row">
+                <div class="col-12">
+                  <img
+                  src="/assets/daily-cogito.jpg"
+                  class="card-img-top img-fluid"
+                  alt="image"
+                 />
+                </div>
+                
+                <div class="col-12">
+                  <div class="card-body text-left">
+                    <h6 class="card-text">Daily Cogito</h6>
+                    <p class="card-subtext">
+                      E chi non ascolta Daily Cogito è cibo per gli zombie.
+                    </p>
+                  </div>
+
+                </div>
               </div>
+              
             </div>
           </div>
 
-          <div class="col">
+          <div class="col px-2">
             <div class="card-homepage text-center">
-              <img
-                src="./assets/locanda-drago.jpg"
-                class="card-img-top img-fluid mt-2 pb-1 rounded"
-                style="width: 90px"
-                alt="image"
-              />
-              <div class="card-body text-left">
-                <h6 class="card-text">Locanda del Drago Rosso</h6>
-                <p class="card-subtext">
-                  Ogni martedì una nuova avventura in cui si chiacchiererà di
-                  Gioco di Ruolo e tutto quello che ci ruota attorno.
-                </p>
+              <div class="row">
+                <div class="col-12">
+                  <img
+                  src="/assets/locanda-drago.jpg"
+                  class="card-img-top img-fluid"
+                  alt="image"
+                 />
+                </div>
+                
+                <div class="col-12">
+                  <div class="card-body text-left">
+                    <h6 class="card-text">Locanda del Drago Rosso</h6>
+                    <p class="card-subtext">
+                      Ogni martedì una nuova avventura in cui si chiacchiererà di
+                      gioco di Ruolo e tutto quello che ci ruota attorno.
+                    </p>
+                  </div>
+
+                </div>
               </div>
+              
             </div>
           </div>
 
-          <div class="col">
+          <div class="col px-2">
             <div class="card-homepage text-center">
-              <img
-                src="./assets/mindfullness.jpg"
-                class="card-img-top img-fluid mt-2 pb-1 rounded"
-                style="width: 90px"
-                alt="image"
-              />
-              <div class="card-body text-left">
-                <h6 class="card-text">Mindfulness in Voce</h6>
-                <p class="card-subtext">
-                  I migliori articoli di Medium.com sulla Mindfulness in formato
-                  audio.
-                </p>
+              <div class="row">
+                <div class="col-12">
+                  <img
+                  src="/assets/mindfullness.jpg"
+                  class="card-img-top img-fluid"
+                  alt="image"
+                 />
+                </div>
+                
+                <div class="col-12">
+                  <div class="card-body text-left">
+                    <h6 class="card-text">Mindfulness in Voce</h6>
+                    <p class="card-subtext">
+                      I migliori articoli di Medium.com sulla Mindfulness in formato
+                      audio.
+                    </p>
+                  </div>
+
+                </div>
               </div>
+              
             </div>
           </div>
 
-          <div class="col">
+          <div class="col px-2">
             <div class="card-homepage text-center">
-              <img
-                src="./assets/qdss.jpg"
-                class="card-img-top img-fluid mt-2 pb-1 rounded"
-                style="width: 90px"
-                alt="image"
-              />
-              <div class="card-body text-left">
-                <h6 class="card-text">Quei Due Sul Server Podcast</h6>
-                <p class="card-subtext">
-                  Il Podcast che mette a nudo Youtubers e Influencer
-                </p>
+              <div class="row">
+                <div class="col-12">
+                  <img
+                  src="/assets/qdss.jpg"
+                  class="card-img-top img-fluid"
+                  alt="image"
+                 />
+                </div>
+                
+                <div class="col-12">
+                  <div class="card-body text-left">
+                    <h6 class="card-text">Quei Due Sul Server Podcast</h6>
+                    <p class="card-subtext">
+                      Il Podcast che mette a nudo Youtubers e Influencer
+                    </p>
+                  </div>
+
+                </div>
               </div>
+              
             </div>
           </div>
 
-          <div class="col">
+          <div class="col px-2">
             <div class="card-homepage text-center">
-              <img
-                src="./assets/power pizza.jpg"
-                class="card-img-top img-fluid mt-2 pb-1 rounded"
-                style="width: 90px"
-                alt="image"
-              />
-              <div class="card-body text-left">
-                <h6 class="card-text">Power Pizza</h6>
-                <p class="card-subtext">
-                  Nick, Sio e Lorro parlano di cose che vedono, leggono e
-                  giocano!
-                </p>
+              <div class="row">
+                <div class="col-12">
+                  <img
+                  src="/assets/power pizza.jpg"
+                  class="card-img-top img-fluid"
+                  alt="image"
+                 />
+                </div>
+                
+                <div class="col-12">
+                  <div class="card-body text-left">
+                    <h6 class="card-text">Power Pizza</h6>
+                    <p class="card-subtext">
+                      Nick, Sio e Lorro parlano di cose che vedono, leggono e
+                      giocano!
+                    </p>
+                  </div>
+
+                </div>
               </div>
+              
             </div>
           </div>
 
-          <div class="col">
+          <div class="col px-2">
             <div class="card-homepage text-center">
-              <img
-                src="./assets/mitologia.jpg"
-                class="card-img-top img-fluid mt-2 pb-1 rounded"
-                style="width: 90px"
-                alt="image"
-              />
-              <div class="card-body text-left">
-                <h6 class="card-text">
-                  Mitologia: le meravigliose storie del mondo antico
-                </h6>
-                <p class="card-subtext">
-                  In questo Podcast, trovi le storie più interessanti dei miti
-                  greci e romani.
-                </p>
+              <div class="row">
+                <div class="col-12">
+                  <img
+                  src="/assets/mitologia.jpg"
+                  class="card-img-top img-fluid"
+                  alt="image"
+                 />
+                </div>
+                
+                <div class="col-12">
+                  <div class="card-body text-left">
+                    <h6 class="card-text">Mitologia: le meravigliose storie del mondo antico</h6>
+                    <p class="card-subtext">
+                      In questo Podcast, trovi le storie più interessanti dei miti
+                      greci e romani.
+                    </p>
+                  </div>
+
+                </div>
               </div>
+              
             </div>
           </div>
+
         </div>
       </div>
     </div>
@@ -663,8 +815,8 @@
           alt="image of the song playing"
         />
         <div class="pr-3 text-nowrap">
-          <a href="#">Bohemian Rhapsody </a> <br /><span class="small"
-            ><a href="#">Queen</a></span
+          <a href="album.html">Bohemian Rhapsody </a> <br /><span class="small"
+            ><a href="artist.html">Queen</a></span
           >
         </div>
         <div>
@@ -770,5 +922,17 @@
 
     <!-- script for the navbar-->
     <script src="./navbar.js"></script>
+
+    <script>
+
+      $(document).on('scroll', function(){
+    if ( $(window).scrollTop() > 40) {
+        $('#fixed-nav-homepage').addClass('onscroll');
+    } else {
+        $('#fixed-nav-homepage').removeClass('onscroll');
+    }
+});
+
+    </script>
   </body>
 </html>
