@@ -679,7 +679,7 @@ div.shows-to-try-homepage {
   border-radius: 0.5rem !important;
 }
 
-@media screen and (max-width: 1551px){
+/* @media screen and (max-width: 1551px){
 
   #recently-played div.card-homepage::after{
     top: 5rem;
@@ -717,4 +717,4 @@ div.shows-to-try-homepage {
     top: 3rem;
   }
 
-}
+} */
