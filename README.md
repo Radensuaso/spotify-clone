@@ -26,7 +26,7 @@ The final goal of this project was to make the visual of 4 Spotify pages:
 
 ## Launch
 
-To launch the web-site go to "link" and type the following e-mail and password:
+To launch the web-site go to https://radensuaso.github.io/spotify-clone/ and type the following e-mail and password:
 
 - **E-mail:** power-rangers@strive.com
 - **Password:** bestteamever
