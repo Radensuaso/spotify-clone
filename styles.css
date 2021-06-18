@@ -286,7 +286,13 @@ input[type='range']:focus::-webkit-slider-track {
   align-items: center;
 }
 
+div.controls-icons div.d-inline-block > div {
+  position: relative;
+}
+
 .play-pause {
+  position: absolute;
+  bottom: -10px;
   background-color: white;
   align-items: center;
   justify-content: center;
@@ -1261,12 +1267,27 @@ div.artist-containers div.play-pause-follow {
 }
 
 .three-dots-dropdown {
+  position: relative;
   display: inline-block;
+}
+
+.three-dots-dropdown .dropdown {
+  position: absolute;
+  top: -20px;
+}
+
+.popular-dots {
+  position: relative;
 }
 
 .three-dots-dropdown button {
   line-height: 0;
   color: var(--white-gray);
+}
+
+.popular-dots .dropdown {
+  position: absolute;
+  top: -25px;
 }
 
 .three-dots-dropdown button:hover {
