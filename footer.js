@@ -1,3 +1,4 @@
+
 /* get play and pause div*/
 const playPauseArray = document.querySelectorAll("div.play-pause")
 
