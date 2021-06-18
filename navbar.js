@@ -1,10 +1,12 @@
-const nabvarElements = document.querySelectorAll(".navbar-to");
+const nabvarElements = document.querySelectorAll('nav ul li');
 
-nabvarElements.forEach((nabvar) => {
-  nabvar.addEventListener("click", (e) => {
-    e.preventDefault();
+// console.log(nabvarElements);
+
+console.log();
+nabvarElements.forEach(nabvar => {
+  nabvar.addEventListener('click', e => {
     e.stopPropagation();
-    nabvarElements.forEach((nav) => nav.classList.remove("navbar-active"));
-    nabvar.classList.add("navbar-active");
+    nabvarElements.forEach(nav => nav.classList.remove('navbar-active'));
+    nabvar.classList.add('navbar-active');
   });
 });
