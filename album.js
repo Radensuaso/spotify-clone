@@ -1,17 +1,19 @@
 const navbarSticky = document.querySelector('.stiky-menu');
-// console.log(navbarSticky.classList.remove('d-none'));
+const pauseIcon = document.querySelector('.pause-icon-album');
+const playIcon = document.querySelector('.play-icon-middle');
 
-const olList = document.querySelector('ol  ');
-const olListI = document.querySelectorAll('ol span div li i ');
-// const olList = document.querySelectorAll('ol span ');
+const olList = document.querySelector('ol');
+// const olListI = document.querySelectorAll('ol span div li i ');
 
-// console.log(olListI);
+//////////////////////////////////////////////////////////////
+////////////// PlayIcon in the music list
+/////////////////////////////////////////////////////////////
 
 olList.addEventListener('mouseover', function (e) {
   e.stopPropagation();
   const elementsClick = e.target.querySelector('.ab');
 
-  elementsClick.classList.remove('d-none');
+  if (elementsClick) elementsClick.classList.remove('d-none');
 
   // console.log(elementsClick);
 });
@@ -20,18 +22,19 @@ olList.addEventListener('mouseout', function (e) {
   e.stopPropagation();
   const elementsLeave = e.target.querySelector('.ab');
 
-  elementsLeave.classList.add('d-none');
-
-  // console.log(elementsLeave);
+  if (elementsLeave) elementsLeave.classList.add('d-none');
 });
 
 //////////////////////////////////////////////////////////
-////////////////Sticky Menu  Album
+////////////////Sticky Menu in the Album Page
 //////////////////////////////////////////////////////////
 
 const sectionAlbum = document.querySelector('.section-icons-album');
 
 const initialCoords = sectionAlbum.getBoundingClientRect();
+
+// console.log(initialCoords.top + 10);
+
 window.addEventListener('scroll', function () {
   // console.log(window.scrollY);
 
@@ -44,105 +47,23 @@ window.addEventListener('scroll', function () {
 ////////////////ol list play icon
 //////////////////////////////////////////////////////////
 
-// console.log(olList[0].classList.remove('d-none'));
+// playIcon.classList.add('d-none');
 
-// console.log(olList[0].classList.remove('d-none'));
+playIcon.addEventListener('click', function (e) {
+  // e.stopPropagation();
 
-// console.log(olListI);
-// console.log(olList);
+  console.log('click');
+  const clickplay = e.currentTarget;
+  pauseIcon.classList.toggle('invisible');
 
-// console.log(olLista.querySelectorAll('  i'));
+  // clickplay.classList.classList.remove('');
 
-// aaaaaaaaaaaaaaaaaaaaaaaaaa
+  // if (clickplay) playIcon.classList.add('d-none');
+  // else pauseIcon.classList.remove('d-none');
 
-// olList.forEach(li => {
-//   // li.classList.add('d-node');
-//   // mouseenter
-//   li.addEventListener('mouseenter', function (e) {
-//     e.preventDefault();
-//     // e.stopPropagation();
+  // playIcon.classList.add('d-none');
+  // pauseIcon.classList.toggle('d-none');
 
-//     olListI.forEach(i => {
-//       // console.log(i.classList.toggle('d-none'));
-//       // e.target.classList.remove('d-none');
-//       // i.classList.remove('d-none');
-//       // console.log(i);
-//       // e.currentTarget;
-//       // console.log(e.currentTarget);
-//       // i.style.backgroundColor = 'red';
-//       if (i) i.classList.remove('d-none');
-//     });
-//   });
-
-//   li.addEventListener('mouseleave', function (e) {
-//     e.stopPropagation();
-
-//     olListI.forEach(i => {
-//       // console.log(i.classList.toggle('d-none'));
-//       // e.target.classList.remove('d-none');
-//       i.classList.add('d-none');
-//     });
-//   });
-
-//   olListI.forEach(i => {
-//     // console.log(i.classList.toggle('d-none'));
-//     // e.target.classList.remove('d-none');
-//     // i.classList.remove('d-none');
-//     // console.log(i);
-
-//     if (i) i.classList.remove('d-none');
-//   });
-// });
-
-// li.addEventListener('mouseleave', function (e) {
-//   e.preventDefault();
-//   e.stopPropagation();
-
-//   olListI.forEach(i => {
-//     console.log(i);
-//     // console.log(i.classList.toggle('d-none'));
-//     // e.target.classList.remove('d-none');
-//     i.classList.add('d-none');
-//   });
-// });
-
-// i.addEventListener('click', e => {
-// console.log('aaa');
-// e.preventDefault();
-// e.stopPropagation();
-// console.log(e.currentTarget);
-// console.log(e.target);
-// e.target.classList.remove('');
-// console.log(this.classList.remove('d-none'));
-// i.classList.toggle('d-none');
-// });
-
-// console.log(li);
-// });
-
-// olListI.forEach(i => {
-//   i.addEventListener('mouseleave', function (e) {
-//     e.preventDefault();
-//     e.stopPropagation();
-
-//     i.forEach(i => {
-//       console.log(i);
-//       // console.log(i.classList.toggle('d-none'));
-//       // e.target.classList.remove('d-none');
-//       i.classList.add('d-none');
-//     });
-//   });
-// });
-
-// const stickyNav = function (entries) {
-//   const [entry] = entries;
-
-//   console.log(entry);
-// };
-
-// const sectionObserver = new IntersectionObserver(stickyNav, {
-//   root: null,
-//   threshold: 0.1,
-// });
-
-// sectionObserver.observe(sectionAlbum);
+  // playIcon.classList.toggle('d-none');
+  // pauseIcon.classList.toggle('d-none');
+});

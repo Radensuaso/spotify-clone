@@ -1,6 +1,6 @@
 const nabvarElements = document.querySelectorAll('nav ul li');
 
-console.log(nabvarElements);
+// console.log(nabvarElements);
 
 console.log();
 nabvarElements.forEach(nabvar => {
