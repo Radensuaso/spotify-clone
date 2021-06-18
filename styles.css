@@ -609,7 +609,7 @@ div.shows-to-try-homepage {
 
 .dropdown-menu-album {
   /* align-self: flex-end !important; */
-  margin-left: 85rem !important;
+  margin-left: 83rem !important;
 }
 
 .dropdown-menu-bg {
@@ -692,13 +692,117 @@ div.shows-to-try-homepage {
 
 /* Icons play */
 
-.arrow-album,
+/* .arrow-album,
 .dropdown-menu-album {
   position: sticky;
   top: 10px;
   left: 0;
   right: 0;
   z-index: 10;
+} */
+
+.stiky-menu .left-arrow-album,
+.stiky-menu .right-arrow-album {
+  color: white;
+  /* justify-content: center;
+  align-items: center; */
+}
+
+.stiky-menu .left-arrow-album {
+  border-radius: 1rem;
+  background-color: rgba(0, 0, 0, 50%);
+  width: 1.8rem;
+  height: 1.8rem;
+  position: absolute;
+  margin-left: 4rem;
+}
+
+.stiky-menu .left-arrow-album i {
+  /* margin-left: 40px; */
+  margin-left: 10px;
+  margin-top: 6px;
+}
+
+.stiky-menu .right-arrow-album {
+  border-radius: 1rem;
+  background-color: rgba(0, 0, 0, 50%);
+  width: 1.8rem;
+  height: 1.8rem;
+  position: absolute;
+  margin-right: 5px;
+  margin-left: 25px;
+}
+
+.stiky-menu .right-arrow-album i {
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+.stiky-menu .span-title-small span,
+.stiky-menu .h2 {
+  margin-left: 11rem;
+  margin-top: 1rem !important;
+}
+
+.stiky-menu .number-sign {
+  display: inline-block;
+  margin-left: 6rem !important;
+}
+
+.stiky-menu .title-small {
+  margin-left: 12px !important;
+}
+
+.stiky-menu .fa-clock {
+  margin-left: 84.8rem !important;
+  margin-top: 1rem !important;
+}
+
+.stiky-menu .play-icon-album {
+  background: var(--buttons-green);
+  border-radius: 50%;
+  width: 2.8rem;
+  height: 2.8rem;
+  position: absolute;
+  padding-left: 17px !important;
+  padding-top: 14px;
+  margin-left: 7rem;
+  margin-top: -6px;
+
+  /* padding-left: 10px !important; */
+
+  /* transition: width 1s, height 1s, transform 1s; */
+}
+
+.stiky-menu .dropdown-menu-album {
+  /* align-self: flex-end !important; */
+  margin-left: 83rem !important;
+  margin-top: -37px !important;
+}
+
+.span-title-small-sticky {
+  color: #948f92;
+  font-size: 12px;
+  background-color: #181818;
+}
+
+.stiky-menu {
+  position: relative;
+  margin-left: 14% !important;
+}
+
+.stiky-menu {
+  height: 100px;
+  background-color: #431636;
+  color: white !important;
+  /* margin-left: 30% !important; */
+
+  /* margin-top: -76rem; */
+  position: sticky;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 /* vieja style */
@@ -713,16 +817,18 @@ div.shows-to-try-homepage {
   transition: width 1s, height 1s, transform 1s;
 }
 
-.play-icon-album:hover {
+/* transtion play  */
+
+/* .play-icon-album:hover {
   width: 5rem;
   height: 5rem;
-  /* transform: scaleX(); */
+  transform: scaleX();
   transform: scale(1);
 }
 
 .heart-icon {
   margin-left: 5% !important;
-}
+} */
 
 .middle-list {
   position: relative;
@@ -746,8 +852,6 @@ ol {
   /* margin-right: 35px; */
   /* margin-left: 35px; */
 
-  counter-reset: item;
-  list-style-type: none;
   font-size: 16px;
   width: 96%;
 }
@@ -787,6 +891,7 @@ ol {
 .section-icons ol a {
   /* margin-bottom: 20px; */
 }
+
 .section-icons ol span:hover {
   /* background-color: var(--white-gray); */
   border-radius: 5px;
@@ -811,14 +916,69 @@ ol a:hover {
   text-decoration: none;
 }
 
-ol li {
+/* ol li {
   display: block;
+} */
+
+ol {
+  counter-reset: item;
+  list-style-type: none;
 }
 ol li:before {
   padding-right: 20px;
-  content: counter(item) '  ';
+  content: counter(item) ' ';
   counter-increment: item;
 }
+
+/* Removing the orderList */
+
+.section-icons ol span div li {
+  /* position: relative; */
+}
+.section-icons ol span div li:hover {
+  /* list-style-type: none !important; */
+  /* list-style: none !important; */
+  /* color: red !important; */
+
+  /* padding-left: 2rem;
+  background-image: url(assets/play-icon.svg);
+  background-position: 0 0;
+  background-size: 1.6rem 1.6rem;
+  background-repeat: no-repeat; */
+}
+
+.section-icons ol span div li:hover::before {
+  content: ' ';
+  /* margin-right: 50px !important; */
+  position: absolute;
+  /* width: 50px;
+  height: 50px; */
+  /* top: 50%; */
+  /* margin-top: -25px; */
+  /* left: -55px; */
+  /* background: url(assets/play-icon.svg) no-repeat center center/cover; */
+}
+
+.ol-list-div {
+  position: relative;
+}
+.play-icon-ol-list {
+  position: absolute;
+  left: -18px;
+  bottom: 4px;
+}
+
+/* ol {
+  counter-reset: my-display-icon;
+}
+
+ol li {
+  counter-increment: my-display-icon;
+}
+
+ol li::before {
+  content: counter(my-display-icon) '';
+} */
 
 .middle-list div i {
   /* margin-left: 85%; */
