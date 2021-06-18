@@ -718,3 +718,410 @@ div.shows-to-try-homepage {
   }
 
 } */
+
+/* play and pause common to artist and album */
+
+.play-pause-pages {
+  font-size: 20px;
+  padding: 30px;
+  background-color: var(--buttons-green);
+}
+
+.play-pages {
+  color: white;
+}
+
+.pause-pages {
+  color: white;
+}
+
+.play-pause-pages:hover {
+  padding: 32px;
+}
+
+/* Artist page */
+
+/* Artist Nav */
+
+div#artist-nav-container {
+  margin-left: 20%;
+}
+
+/* Artist Header */
+
+div#artist-header-container {
+  margin-left: 20%;
+  color: white;
+  background: url("assets/queen-cover.png") #0a0304 center;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  height: 350px;
+}
+
+div#artist-header-container div.d-flex {
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+div#artist-header-container div.d-flex p.verified-artist {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+div#artist-header-container div.d-flex p.verified-artist span {
+  color: #2e77d0;
+  font-size: 16px;
+}
+
+div#artist-header-container div.d-flex h1 {
+  font-size: 96px;
+  line-height: 96px;
+  font-weight: 900;
+}
+
+div#artist-header-container div.d-flex p.listeners {
+  font-size: 16px;
+  line-height: 32px;
+}
+
+/*Main part of the artist page*/
+main {
+  width: 100%;
+  height: 3500px;
+  background: rgb(18, 18, 18);
+  background: linear-gradient(
+    0deg,
+    rgba(18, 18, 18, 1) 84%,
+    rgba(77, 5, 10, 1) 100%
+  );
+}
+
+/* Artist popular */
+
+div.artist-containers {
+  color: white;
+  margin-left: 20%;
+}
+
+/* Play pause follow section */
+
+div.artist-containers div.play-pause-follow {
+  align-items: center;
+}
+
+/* three dots drop down */
+
+.three-dots-dropdown button {
+  font-size: 30px;
+}
+
+.three-dots-dropdown {
+  display: inline-block;
+}
+
+.three-dots-dropdown button {
+  line-height: 0;
+  color: var(--white-gray);
+}
+
+.three-dots-dropdown button:hover {
+  background-color: transparent;
+  color: white;
+}
+
+.btn-outline-light:not(:disabled):not(.disabled).active,
+.btn-outline-light:not(:disabled):not(.disabled):active,
+.show > .btn-outline-light.dropdown-toggle {
+  color: white;
+  background-color: transparent;
+  border: 0;
+}
+
+.three-dots-dropdown .dropdown-menu {
+  background-color: var(--border-gray);
+  color: var(--white-gray);
+}
+
+.dropdown-menu a {
+  color: var(--white-gray);
+}
+
+.dropdown-menu a:hover {
+  background-color: var(--reproduction-gray);
+  color: white;
+}
+
+.dropdown-toggle::after {
+  content: none;
+}
+
+/*Popular songs Table  */
+
+h3.artist-h3 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.popular-table table {
+  color: white;
+}
+
+.popular-table table img {
+  width: 40px;
+  display: inline-block;
+}
+
+.popular-table th span.popular-table-heading {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.popular-table tr:hover {
+  background-color: rgba(75, 75, 75, 0.5);
+}
+
+/* Artist Pick */
+div.artist-pick div.d-flex > img {
+  width: 100px;
+  height: 100px;
+}
+
+div.artist-pick div.d-flex div p img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+div.artist-pick div.d-flex div p.playlist {
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--white-gray);
+}
+
+h4.best-of a {
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* Artist common rows */
+.common-rows div h3 + a {
+  color: var(--white-gray);
+}
+
+/* cards */
+.artist-song-cards {
+  background-color: var(--card-gray);
+  cursor: pointer;
+}
+
+.artist-song-cards .card-body h5 {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.artist-song-cards .card-body h5 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.artist-song-cards .card-body p {
+  color: var(--white-gray);
+}
+
+.artist-song-cards:hover {
+  background-color: var(--border-gray);
+}
+
+/* Play on hover cards */
+/* square images */
+.play-artist-cards {
+  right: -20px;
+  bottom: 4px;
+}
+
+/* circular images */
+div.fans-also-like div.position-relative .play-artist-cards {
+  right: 15px;
+  bottom: 30px;
+}
+
+/* Fans Also like section */
+div.fans-also-like div.position-relative {
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+/* About section */
+
+div.about-col div.position-relative {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+div.about-col div.position-relative::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: rgba(255, 255, 255, 0.2);
+  z-index: 5;
+}
+
+div.about-col div.position-relative img {
+  width: 100%;
+}
+
+div.about-col div.position-relative div.circular-badge {
+  color: white;
+  background-color: #2e77d0;
+  border-radius: 50%;
+  top: 35px;
+  right: 35px;
+  width: 90px;
+  height: 90px;
+  z-index: 6;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+div.about-col div.position-relative div.circular-badge span.place-world {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 0px;
+}
+
+div.about-col div.position-relative div.circular-badge span.in-the-world {
+  font-size: 11px;
+  line-height: 0px;
+}
+
+div.about-col div.position-relative div.about-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  left: 40px;
+  bottom: 40px;
+  text-shadow: 1px 1px 0px #000000;
+  z-index: 6;
+}
+
+div.about-col div.position-relative div.about-text p.listeners-about {
+  font-weight: 700;
+}
+
+div.about-col div.position-relative div.about-text p.queen-about {
+  width: 70%;
+}
+
+/* On Tour*/
+
+div.concert-date {
+  color: white;
+  background-color: #2a2a2a;
+  top: 35px;
+  right: 35px;
+  border-radius: 5px;
+  width: 75px;
+  height: 60px;
+  z-index: 6;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+div.concert-date span.concert-date-month {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 0px;
+}
+
+div.concert-date span.concert-date-day {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 0px;
+}
+
+div.artist-concerts
+  > div.d-flex
+  div.concert-date
+  + div.d-flex
+  p.concert-artist {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+div.artist-concerts > div.d-flex div.concert-date + div.d-flex p.concert-place {
+  font-size: 14px;
+  color: var(--white-gray);
+}
+
+div.artist-concerts > div.d-flex div.concert-date + div.d-flex div {
+  line-height: 16px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+div.artist-concerts a {
+  font-size: 14px;
+  color: var(--white-gray);
+  font-weight: 700;
+}
+
+div.artist-concerts {
+  cursor: pointer;
+}
+
+/* offers */
+
+div.artist-offers img {
+  width: 80px;
+  height: 80px;
+}
+
+div.artist-offers > div.d-flex div {
+  line-height: 16px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+div.artist-offers > div.d-flex div p.artist-offer-title {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+div.artist-offers > div.d-flex div p.artist-offer-description {
+  font-size: 14px;
+  color: var(--white-gray);
+}
+
+div.artist-offers > div.d-flex {
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+div.artist-offers > div.d-flex:hover {
+  background-color: var(--border-gray);
+}
+
