@@ -68,8 +68,6 @@ nav ul {
   text-decoration: none;
   color: var(--white-gray);
   text-align: center;
-  /* margin-bottom: 20px; */
-  /* z-index: 10; */
   padding-left: 20px;
   padding-bottom: 15px;
 }
@@ -125,12 +123,7 @@ header .middle-ul li {
 }
 
 .navbar-active {
-  /* background: var(--reproduction-gray); */
-  /* opacity: 0.4; */
-
   background-color: rgba(150, 145, 145, 0.4);
-  /* background-color: #535353; */
-
   border-radius: 5px;
 }
 
@@ -144,7 +137,6 @@ header .middle-ul li {
   display: -webkit-box;
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
-  /* -webkit-box-orient: horizontal; */
   overflow: hidden;
 
   padding-bottom: 0 !important;
@@ -699,14 +691,11 @@ div.shows-to-try-homepage {
     rgba(95, 33, 77, 1) 72%
   );
   height: 38%;
-  /* position: relative; */
 }
 
 .section .left-arrow-album,
 .section .right-arrow-album {
   color: white;
-  /* justify-content: center;
-  align-items: center; */
 }
 
 .section .left-arrow-album {
@@ -719,7 +708,6 @@ div.shows-to-try-homepage {
 }
 
 .section .left-arrow-album i {
-  /* margin-left: 40px; */
   margin-left: 10px;
   margin-top: 6px;
 }
@@ -742,7 +730,6 @@ div.shows-to-try-homepage {
 }
 
 .dropdown-menu-album {
-  /* align-self: flex-end !important; */
   margin-left: 83rem !important;
 }
 
@@ -754,12 +741,9 @@ div.shows-to-try-homepage {
 .dropdown-menu-album a {
   color: white;
   font-size: 14px;
-  /* padding: 0 10px; */
 }
 
 .dropdown-menu-album a:hover {
-  /* color: white;
-  font-size: 14px; */
   color: white;
   border-radius: 5px;
   background-color: rgba(150, 145, 145, 0.2);
@@ -805,16 +789,13 @@ div.shows-to-try-homepage {
   );
 
   height: 100vh;
-  /* z-index: 20; */
 
   position: relative;
-  /* justify-content: center; */
   flex-direction: column;
 }
 
 .section-icons .section-icons-album {
   margin-left: 16% !important;
-  /* padding-left: 20px !important; */
   position: relative;
 }
 
@@ -824,22 +805,9 @@ div.shows-to-try-homepage {
   padding-top: 16px;
 }
 
-/* Icons play */
-
-/* .arrow-album,
-.dropdown-menu-album {
-  position: sticky;
-  top: 10px;
-  left: 0;
-  right: 0;
-  z-index: 10;
-} */
-
 .stiky-menu .left-arrow-album,
 .stiky-menu .right-arrow-album {
   color: white;
-  /* justify-content: center;
-  align-items: center; */
 }
 
 .stiky-menu .left-arrow-album {
@@ -852,7 +820,6 @@ div.shows-to-try-homepage {
 }
 
 .stiky-menu .left-arrow-album i {
-  /* margin-left: 40px; */
   margin-left: 10px;
   margin-top: 6px;
 }
@@ -902,14 +869,9 @@ div.shows-to-try-homepage {
   padding-top: 14px;
   margin-left: 7rem;
   margin-top: -6px;
-
-  /* padding-left: 10px !important; */
-
-  /* transition: width 1s, height 1s, transform 1s; */
 }
 
 .stiky-menu .dropdown-menu-album {
-  /* align-self: flex-end !important; */
   margin-left: 83rem !important;
   margin-top: -37px !important;
 }
@@ -929,20 +891,12 @@ div.shows-to-try-homepage {
   height: 100px;
   background-color: #431636;
   color: white !important;
-  /* margin-left: 30% !important; */
-
-  /* margin-top: -76rem; */
   position: sticky;
   z-index: 50;
   top: 0;
   left: 0;
   right: 0;
 }
-
-/* 
-Play Icon and Pause style
-
-*/
 
 .section-icons .section-icons-album .play-icon-album {
   background: var(--buttons-green);
@@ -970,41 +924,15 @@ Play Icon and Pause style
   margin-left: 78px !important;
 }
 
-/* transtion play  */
-
-/* .play-icon-album:hover {
-  width: 5rem;
-  height: 5rem;
-  transform: scaleX();
-  transform: scale(1);
-}
-
-.heart-icon {
-  margin-left: 5% !important;
-} */
-
 .middle-list {
   position: relative;
-  /* background: rgb(45, 21, 38);
-  background: linear-gradient(
-    342deg,
-    rgba(45, 21, 38, 1) 3%,
-    rgba(65, 23, 53, 1) 96%
-  ); */
-
-  /* margin-left: 20% !important; */
   padding-left: 2% !important;
 }
-
-/* .middle-list div p, */
 
 .middle-list div p,
 .middle-list div span,
 ol {
   color: white;
-  /* margin-right: 35px; */
-  /* margin-left: 35px; */
-
   font-size: 16px;
   width: 96%;
 }
@@ -1019,39 +947,23 @@ ol {
 }
 
 .middle-list div .fa-clock {
-  /* color: #948f92 !important; */
   padding-right: 7rem !important;
-  /* background-color: #948f92; */
 }
 
 .section-icons ol > span {
   display: inline-block;
   padding: 8px 13px;
   width: 100%;
-  /* background-color: rebeccapurple; */
 }
 
 .section-icons .span-minutes {
   padding-right: 30px !important;
-  /* display: inline-block; */
-  /* margin-left: 50%; */
-  /* padding-left: 90%; */
-  /* margin-top: 20%; */
-  /* padding-bottom: 40px; */
 }
 
-/* .section-icons ol li,
-.section-icons ol a {
-  margin-bottom: 20px;
-}
- */
 .section-icons ol span:hover {
-  /* background-color: var(--white-gray); */
   border-radius: 5px;
-
   background-color: rgba(150, 145, 145, 0.2);
   color: white !important;
-  /* opacity: 0.9; */
 }
 
 .section-icons ol span li:hover,
@@ -1069,10 +981,6 @@ ol a:hover {
   text-decoration: none;
 }
 
-/* ol li {
-  display: block;
-} */
-
 ol {
   counter-reset: item;
   list-style-type: none;
@@ -1083,39 +991,6 @@ ol li:before {
   counter-increment: item;
 }
 
-/* Removing the orderList */
-
-/* .section-icons ol span div li {
-  position: relative;
-} */
-/* .section-icons ol span div li:hover {
-  list-style-type: none !important;
-  list-style: none !important;
-  color: red !important;
-
-  padding-left: 2rem;
-  background-image: url(assets/play-icon.svg);
-  background-position: 0 0;
-  background-size: 1.6rem 1.6rem;
-  background-repeat: no-repeat;
-} */
-
-/* .section-icons ol span:hover::before {
-  content: ' ';
-  margin-right: 50px !important;
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  top: 50%;
-  margin-top: -25px;
-  left: -55px;
-  background: url(assets/play-icon.svg) no-repeat center center/cover;
-
-  list-style-image: url(../assets/play-icon.svg) no-repeat center/cover;
-  width: 50px;
-  height: 50px;
-} */
-
 .ol-list-div {
   position: relative;
 }
@@ -1125,34 +1000,12 @@ ol li:before {
   bottom: 4px;
 }
 
-/* ol {
-  counter-reset: my-display-icon;
-}
-
-ol li {
-  counter-increment: my-display-icon;
-}
-
-ol li::before {
-  content: counter(my-display-icon) '';
-} */
-
-/* .middle-list div i {
-  margin-left: 85%;
-  padding-right: 200px !important;
-
-  margin-right: 60px;
-} */
-
 .middle-title-hr {
-  /* margin-left: 1%; */
   width: 95%;
   position: absolute;
   top: 25px;
   border-top: 0.2px solid #d6d1d5;
 }
-
-/* play and pause common to artist and album */
 
 .play-pause-pages {
   font-size: 20px;
@@ -1176,8 +1029,12 @@ ol li::before {
 
 /* Artist Nav */
 
-div#artist-nav-container {
-  margin-left: 14%;
+#artist-nav-container {
+  position: fixed;
+  left: 14%;
+  top: 0;
+  bottom: 0;
+  right: 0;
 }
 
 /* Artist Header */
@@ -1573,38 +1430,31 @@ div.artist-offers > div.d-flex:hover {
   background-color: var(--border-gray);
 }
 
-
-
-@media screen and (min-width: 1520px){
-
-  #recently-played div.card-homepage::after{
+@media screen and (min-width: 1520px) {
+  #recently-played div.card-homepage::after {
     top: 50%;
   }
 
-  #recently-played div.card-homepage:hover::after{
+  #recently-played div.card-homepage:hover::after {
     top: 45%;
   }
-
 }
 
-@media screen and (min-width: 1870px){
-
-  #recently-played div.card-homepage::after{
+@media screen and (min-width: 1870px) {
+  #recently-played div.card-homepage::after {
     background-size: 4rem 4rem;
     height: 4rem;
     width: 4rem;
     top: 50%;
   }
 
-  #recently-played div.card-homepage:hover::after{
+  #recently-played div.card-homepage:hover::after {
     top: 45%;
   }
-
 }
 
-@media screen and (min-width: 2000px){
-
-  #recently-played div.card-homepage::after{
+@media screen and (min-width: 2000px) {
+  #recently-played div.card-homepage::after {
     background-size: 4.5rem 4.5rem;
     height: 4.5rem;
     width: 4.5rem;
@@ -1612,15 +1462,13 @@ div.artist-offers > div.d-flex:hover {
     right: 8%;
   }
 
-  #recently-played div.card-homepage:hover::after{
+  #recently-played div.card-homepage:hover::after {
     top: 45%;
   }
-
 }
 
-@media screen and (min-width: 2200px){
-
-  #recently-played div.card-homepage::after{
+@media screen and (min-width: 2200px) {
+  #recently-played div.card-homepage::after {
     background-size: 4.5rem 4.5rem;
     height: 4.5rem;
     width: 4.5rem;
@@ -1628,8 +1476,7 @@ div.artist-offers > div.d-flex:hover {
     right: 8%;
   }
 
-  #recently-played div.card-homepage:hover::after{
+  #recently-played div.card-homepage:hover::after {
     top: 50%;
   }
-
 }
