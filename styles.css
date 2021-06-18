@@ -939,16 +939,35 @@ div.shows-to-try-homepage {
   right: 0;
 }
 
-/* vieja style */
+/* 
+Play Icon and Pause style
 
-.play-icon-album {
+*/
+
+.section-icons .section-icons-album .play-icon-album {
   background: var(--buttons-green);
   border-radius: 50%;
   width: 4rem;
   height: 4rem;
   position: absolute;
+  cursor: pointer;
 
   transition: width 1s, height 1s, transform 1s;
+}
+
+.section-icons .section-icons-album .pause-icon-album {
+  background: var(--buttons-green);
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+  padding-left: 1.1% !important;
+  cursor: pointer;
+
+  transition: width 1s, height 1s, transform 1s;
+}
+.heart-icon {
+  margin-left: 78px !important;
 }
 
 /* transtion play  */
@@ -1081,17 +1100,21 @@ ol li:before {
   background-repeat: no-repeat;
 } */
 
-.section-icons ol span div li:hover::before {
+/* .section-icons ol span:hover::before {
   content: ' ';
-  /* margin-right: 50px !important; */
+  margin-right: 50px !important;
   position: absolute;
-  /* width: 50px;
-  height: 50px; */
-  /* top: 50%; */
-  /* margin-top: -25px; */
-  /* left: -55px; */
-  /* background: url(assets/play-icon.svg) no-repeat center center/cover; */
-}
+  width: 50px;
+  height: 50px;
+  top: 50%;
+  margin-top: -25px;
+  left: -55px;
+  background: url(assets/play-icon.svg) no-repeat center center/cover;
+
+  list-style-image: url(../assets/play-icon.svg) no-repeat center/cover;
+  width: 50px;
+  height: 50px;
+} */
 
 .ol-list-div {
   position: relative;
