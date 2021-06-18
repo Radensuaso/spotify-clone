@@ -1529,6 +1529,8 @@ div.artist-offers > div.d-flex:hover {
   background-color: var(--border-gray);
 }
 
+
+
 @media screen and (min-width: 1520px){
 
   #recently-played div.card-homepage::after{
@@ -1552,6 +1554,38 @@ div.artist-offers > div.d-flex:hover {
 
   #recently-played div.card-homepage:hover::after{
     top: 45%;
+  }
+
+}
+
+@media screen and (min-width: 2000px){
+
+  #recently-played div.card-homepage::after{
+    background-size: 4.5rem 4.5rem;
+    height: 4.5rem;
+    width: 4.5rem;
+    top: 50%;
+    right: 8%;
+  }
+
+  #recently-played div.card-homepage:hover::after{
+    top: 45%;
+  }
+
+}
+
+@media screen and (min-width: 2200px){
+
+  #recently-played div.card-homepage::after{
+    background-size: 4.5rem 4.5rem;
+    height: 4.5rem;
+    width: 4.5rem;
+    top: 45%;
+    right: 8%;
+  }
+
+  #recently-played div.card-homepage:hover::after{
+    top: 50%;
   }
 
 }
