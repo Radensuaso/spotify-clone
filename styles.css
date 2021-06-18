@@ -324,15 +324,15 @@ input[type='range']:focus::-webkit-slider-track {
 /* Homepage */
 
 .container-homepage {
-  width: 80%;
+  width: 86%;
   height: 950px;
   position: absolute;
   right: 0;
-  background: rgb(85,40,39);
-  background: linear-gradient(180deg, rgba(85,40,39,1) 0%, transparent 30%);
+  background: rgb(85, 40, 39);
+  background: linear-gradient(180deg, rgba(85, 40, 39, 1) 0%, transparent 30%);
 }
 
-#fixed-nav-homepage{
+#fixed-nav-homepage {
   background-color: transparent;
   position: -webkit-sticky;
   position: sticky;
@@ -375,7 +375,6 @@ div#left-arrow i {
   font-weight: 600;
   color: white;
   left: 8px;
-  
 }
 
 div#right-arrow {
@@ -407,31 +406,31 @@ div#right-arrow i.disabled {
   left: 10.5px;
 }
 
-.dropdown-menu{
+.dropdown-menu {
   background-color: #202020;
   margin-top: 0.5rem;
   width: 17rem;
   margin-right: 1.3rem;
 }
 
-.dropdown-menu i{
+.dropdown-menu i {
   color: #f1f1f1;
 }
 
-.dropdown-menu a{
+.dropdown-menu a {
   margin-right: 2rem;
 }
 
-.dropdown a:hover{
+.dropdown a:hover {
   background-color: #212121;
   color: white;
 }
 
-.dropdown a{
+.dropdown a {
   color: white;
 }
 
-a.dropdown-item:hover{
+a.dropdown-item:hover {
   background-color: #747474;
 }
 
@@ -444,7 +443,7 @@ a.dropdown-item:hover{
   padding-right: 0px;
 }
 
-.onscroll{
+.onscroll {
   background-color: #181818ef !important;
   height: 4rem !important;
 }
@@ -472,8 +471,8 @@ div.col.good-morning {
   padding-right: 0.3rem;
 }
 
-.good-morning div.card-homepage:hover{
-  background-color:  rgba(255, 255, 255, 15%);
+.good-morning div.card-homepage:hover {
+  background-color: rgba(255, 255, 255, 15%);
   cursor: pointer;
 }
 
@@ -500,7 +499,7 @@ div.col.good-morning {
   overflow: hidden;
 }
 
-#nymph{
+#nymph {
   font-size: 12px;
   margin: 0;
   font-weight: 600;
@@ -510,7 +509,7 @@ div.col.good-morning {
   overflow: hidden;
 }
 
-#recently-played{
+#recently-played {
   height: fit-content;
 }
 
@@ -525,17 +524,17 @@ p.recently-played-homepage {
   color: #b3b3b3;
 }
 
-p.recently-played-homepage:hover{
+p.recently-played-homepage:hover {
   cursor: pointer;
   text-decoration: underline;
 }
 
-#recently-played img{
+#recently-played img {
   padding: 0.8rem;
 }
 
-#recently-played div.card-homepage::after{
-  content: "";
+#recently-played div.card-homepage::after {
+  content: '';
   background-image: url(https://jccdallas.org/wp-content/uploads/2020/06/Spotify-Play-Button-1.png);
   position: absolute;
   background-size: 3rem 3rem;
@@ -551,7 +550,7 @@ p.recently-played-homepage:hover{
   transition: top 0.4s ease;
 }
 
-#recently-played div.card-homepage:hover::after{
+#recently-played div.card-homepage:hover::after {
   opacity: 1;
   top: 5.5rem;
 }
@@ -563,7 +562,7 @@ p.recently-played-homepage:hover{
   border-radius: 0.3rem;
 }
 
-#recently-played div.card-homepage:hover{
+#recently-played div.card-homepage:hover {
   background-color: #2c2c2c;
   cursor: pointer;
 }
@@ -618,12 +617,12 @@ div.shows-to-try-homepage {
   color: #b3b3b3;
 }
 
-.shows-to-try-homepage p:hover{
+.shows-to-try-homepage p:hover {
   text-decoration: underline;
   cursor: pointer;
 }
 
-#shows-homepage{
+#shows-homepage {
   height: fit-content;
 }
 
@@ -633,12 +632,12 @@ div.shows-to-try-homepage {
   height: 100%;
 }
 
-#shows-homepage .card-homepage:hover{
+#shows-homepage .card-homepage:hover {
   background-color: #2c2c2c;
   cursor: pointer;
 }
 
-#shows-homepage img{
+#shows-homepage img {
   padding: 0.8rem;
   border-radius: 1.5rem;
 }
@@ -1016,11 +1015,11 @@ ol {
   /* padding-bottom: 40px; */
 }
 
-.section-icons ol li,
+/* .section-icons ol li,
 .section-icons ol a {
-  /* margin-bottom: 20px; */
+  margin-bottom: 20px;
 }
-
+ */
 .section-icons ol span:hover {
   /* background-color: var(--white-gray); */
   border-radius: 5px;
@@ -1061,20 +1060,20 @@ ol li:before {
 
 /* Removing the orderList */
 
-.section-icons ol span div li {
-  /* position: relative; */
-}
-.section-icons ol span div li:hover {
-  /* list-style-type: none !important; */
-  /* list-style: none !important; */
-  /* color: red !important; */
+/* .section-icons ol span div li {
+  position: relative;
+} */
+/* .section-icons ol span div li:hover {
+  list-style-type: none !important;
+  list-style: none !important;
+  color: red !important;
 
-  /* padding-left: 2rem;
+  padding-left: 2rem;
   background-image: url(assets/play-icon.svg);
   background-position: 0 0;
   background-size: 1.6rem 1.6rem;
-  background-repeat: no-repeat; */
-}
+  background-repeat: no-repeat;
+} */
 
 .section-icons ol span div li:hover::before {
   content: ' ';
@@ -1109,12 +1108,12 @@ ol li::before {
   content: counter(my-display-icon) '';
 } */
 
-.middle-list div i {
-  /* margin-left: 85%; */
-  /* padding-right: 200px !important; */
+/* .middle-list div i {
+  margin-left: 85%;
+  padding-right: 200px !important;
 
-  /* margin-right: 60px; */
-}
+  margin-right: 60px;
+} */
 
 .middle-title-hr {
   /* margin-left: 1%; */
@@ -1188,15 +1187,15 @@ ol li::before {
 /* Artist Nav */
 
 div#artist-nav-container {
-  margin-left: 20%;
+  margin-left: 14%;
 }
 
 /* Artist Header */
 
 div#artist-header-container {
-  margin-left: 20%;
+  margin-left: 14%;
   color: white;
-  background: url("assets/queen-cover.png") #0a0304 center;
+  background: url('assets/queen-cover.png') #0a0304 center;
   background-repeat: no-repeat;
   background-size: 50%;
   height: 350px;
@@ -1246,7 +1245,7 @@ main {
 
 div.artist-containers {
   color: white;
-  margin-left: 20%;
+  margin-left: 14%;
 }
 
 /* Play pause follow section */
@@ -1414,7 +1413,7 @@ div.about-col div.position-relative {
 }
 
 div.about-col div.position-relative::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 0px;
   left: 0px;
