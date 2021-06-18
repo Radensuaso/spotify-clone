@@ -286,7 +286,13 @@ input[type='range']:focus::-webkit-slider-track {
   align-items: center;
 }
 
+div.controls-icons div.d-inline-block > div {
+  position: relative;
+}
+
 .play-pause {
+  position: absolute;
+  bottom: -10px;
   background-color: white;
   align-items: center;
   justify-content: center;
@@ -541,8 +547,8 @@ p.recently-played-homepage:hover {
   display: inline-block;
   width: 3rem;
   height: 3rem;
-  top: 6rem;
-  right: 1.2rem;
+  top: 45%;
+  right: 12%;
   z-index: 1;
   opacity: 0;
   border-radius: 1.5rem;
@@ -552,7 +558,7 @@ p.recently-played-homepage:hover {
 
 #recently-played div.card-homepage:hover::after {
   opacity: 1;
-  top: 5.5rem;
+  top: 40%;
 }
 
 #recently-played div.card-homepage {
@@ -1145,45 +1151,6 @@ ol li::before {
   top: 25px;
   border-top: 0.2px solid #d6d1d5;
 }
-/* @media screen and (max-width: 1551px){
-
-  #recently-played div.card-homepage::after{
-    top: 5rem;
-  }
-
-  #recently-played div.card-homepage:hover::after{
-    top: 4rem;
-  }
-
-}
-
-@media screen and (max-width: 1440px){
-
-  #recently-played div.card-homepage::after{
-    top: 5rem;
-    right: 1.5rem;
-    background-size: 2rem 2rem;
-    width: 2rem;
-    height: 2rem;
-  }
-
-  #recently-played div.card-homepage:hover::after{
-    top: 4.5rem;
-  }
-
-}
-
-@media screen and (max-width: 1235px){
-
-  #recently-played div.card-homepage::after{
-    top: 4rem;
-  }
-
-  #recently-played div.card-homepage:hover::after{
-    top: 3rem;
-  }
-
-} */
 
 /* play and pause common to artist and album */
 
@@ -1284,12 +1251,27 @@ div.artist-containers div.play-pause-follow {
 }
 
 .three-dots-dropdown {
+  position: relative;
   display: inline-block;
+}
+
+.three-dots-dropdown .dropdown {
+  position: absolute;
+  top: -20px;
+}
+
+.popular-dots {
+  position: relative;
 }
 
 .three-dots-dropdown button {
   line-height: 0;
   color: var(--white-gray);
+}
+
+.popular-dots .dropdown {
+  position: absolute;
+  top: -25px;
 }
 
 .three-dots-dropdown button:hover {
@@ -1589,4 +1571,65 @@ div.artist-offers > div.d-flex {
 
 div.artist-offers > div.d-flex:hover {
   background-color: var(--border-gray);
+}
+
+
+
+@media screen and (min-width: 1520px){
+
+  #recently-played div.card-homepage::after{
+    top: 50%;
+  }
+
+  #recently-played div.card-homepage:hover::after{
+    top: 45%;
+  }
+
+}
+
+@media screen and (min-width: 1870px){
+
+  #recently-played div.card-homepage::after{
+    background-size: 4rem 4rem;
+    height: 4rem;
+    width: 4rem;
+    top: 50%;
+  }
+
+  #recently-played div.card-homepage:hover::after{
+    top: 45%;
+  }
+
+}
+
+@media screen and (min-width: 2000px){
+
+  #recently-played div.card-homepage::after{
+    background-size: 4.5rem 4.5rem;
+    height: 4.5rem;
+    width: 4.5rem;
+    top: 50%;
+    right: 8%;
+  }
+
+  #recently-played div.card-homepage:hover::after{
+    top: 45%;
+  }
+
+}
+
+@media screen and (min-width: 2200px){
+
+  #recently-played div.card-homepage::after{
+    background-size: 4.5rem 4.5rem;
+    height: 4.5rem;
+    width: 4.5rem;
+    top: 45%;
+    right: 8%;
+  }
+
+  #recently-played div.card-homepage:hover::after{
+    top: 50%;
+  }
+
 }
