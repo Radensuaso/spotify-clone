@@ -325,14 +325,26 @@ input[type='range']:focus::-webkit-slider-track {
 
 .container-homepage {
   width: 80%;
-  height: 100vh;
+  height: 950px;
   position: absolute;
   right: 0;
+  background: rgb(85,40,39);
+  background: linear-gradient(180deg, rgba(85,40,39,1) 0%, transparent 30%);
+}
+
+#fixed-nav-homepage{
+  background-color: transparent;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 3.5rem;
+  z-index: 2;
+  height: 4.5rem;
 }
 
 .heading-homepage {
   height: fit-content;
-  background: linear-gradient(#552827, #121212);
 }
 
 div#top-buttons-homepage {
@@ -354,6 +366,7 @@ div#left-arrow {
   width: 2rem;
   border-radius: 1rem;
   background-color: rgba(0, 0, 0, 50%);
+  cursor: pointer;
 }
 
 div#left-arrow i {
@@ -362,6 +375,7 @@ div#left-arrow i {
   font-weight: 600;
   color: white;
   left: 8px;
+  
 }
 
 div#right-arrow {
@@ -372,6 +386,7 @@ div#right-arrow {
   width: 2rem;
   border-radius: 1rem;
   background-color: rgba(0, 0, 0, 30%);
+  cursor: not-allowed;
 }
 
 div#right-arrow i.disabled {
@@ -390,6 +405,34 @@ div#right-arrow i.disabled {
   color: white;
   opacity: 0.7;
   left: 10.5px;
+}
+
+.dropdown-menu{
+  background-color: #202020;
+  margin-top: 0.5rem;
+  width: 17rem;
+  margin-right: 1.3rem;
+}
+
+.dropdown-menu i{
+  color: #f1f1f1;
+}
+
+.dropdown-menu a{
+  margin-right: 2rem;
+}
+
+.dropdown a:hover{
+  background-color: #212121;
+  color: white;
+}
+
+.dropdown a{
+  color: white;
+}
+
+a.dropdown-item:hover{
+  background-color: #747474;
 }
 
 .btn-account {
@@ -399,6 +442,11 @@ div#right-arrow i.disabled {
 
 #top-buttons-homepage .col-5 {
   padding-right: 0px;
+}
+
+.onscroll{
+  background-color: #181818ef !important;
+  height: 4rem !important;
 }
 
 a#dropdownMenuLink {
@@ -424,6 +472,11 @@ div.col.good-morning {
   padding-right: 0.3rem;
 }
 
+.good-morning div.card-homepage:hover{
+  background-color:  rgba(255, 255, 255, 15%);
+  cursor: pointer;
+}
+
 .good-morning div.card-homepage {
   background-color: rgba(255, 255, 255, 6%);
   color: white;
@@ -447,6 +500,20 @@ div.col.good-morning {
   overflow: hidden;
 }
 
+#nymph{
+  font-size: 12px;
+  margin: 0;
+  font-weight: 600;
+  display: -webkit-box;
+  -webkit-line-clamp: 1 !important;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+#recently-played{
+  height: fit-content;
+}
+
 div.recently-played-homepage {
   align-items: baseline;
   color: white;
@@ -458,21 +525,56 @@ p.recently-played-homepage {
   color: #b3b3b3;
 }
 
-#recently-played .col {
-  padding-right: 0.3rem;
-  padding-left: 0.3rem;
+p.recently-played-homepage:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#recently-played img{
+  padding: 0.8rem;
+}
+
+#recently-played div.card-homepage::after{
+  content: "";
+  background-image: url(https://jccdallas.org/wp-content/uploads/2020/06/Spotify-Play-Button-1.png);
+  position: absolute;
+  background-size: 3rem 3rem;
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  top: 6rem;
+  right: 1.2rem;
+  z-index: 1;
+  opacity: 0;
+  border-radius: 1.5rem;
+  transition: opacity 0.2s ease;
+  transition: top 0.4s ease;
+}
+
+#recently-played div.card-homepage:hover::after{
+  opacity: 1;
+  top: 5.5rem;
 }
 
 #recently-played div.card-homepage {
   background-color: #181818;
   color: white;
-  height: 155px;
+  height: 100%;
+  border-radius: 0.3rem;
+}
+
+#recently-played div.card-homepage:hover{
+  background-color: #2c2c2c;
+  cursor: pointer;
 }
 
 #recently-played .card-body {
   display: flex;
   flex-direction: column;
-  padding: 5px;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+  padding-bottom: 0.3rem;
+  padding-top: 0.2rem;
 }
 
 #recently-played h6 {
@@ -516,12 +618,36 @@ div.shows-to-try-homepage {
   color: #b3b3b3;
 }
 
+.shows-to-try-homepage p:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#shows-homepage{
+  height: fit-content;
+}
+
 #shows-homepage .card-homepage {
+  border-radius: 0.3rem;
   background-color: #181818;
+  height: 100%;
+}
+
+#shows-homepage .card-homepage:hover{
+  background-color: #2c2c2c;
+  cursor: pointer;
+}
+
+#shows-homepage img{
+  padding: 0.8rem;
+  border-radius: 1.5rem;
 }
 
 #shows-homepage .card-body {
-  padding: 5px;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+  padding-top: 0;
+  padding-bottom: 0.4rem;
 }
 
 #shows-homepage h6 {
@@ -554,7 +680,6 @@ div.shows-to-try-homepage {
 .rounded {
   border-radius: 0.5rem !important;
 }
-
 /* 
 //////////////////////////////////////////////////////////
 /////////////////// ALBUM STYLES
@@ -997,4 +1122,449 @@ ol li::before {
   position: absolute;
   top: 25px;
   border-top: 0.2px solid #d6d1d5;
+}
+/* @media screen and (max-width: 1551px){
+
+  #recently-played div.card-homepage::after{
+    top: 5rem;
+  }
+
+  #recently-played div.card-homepage:hover::after{
+    top: 4rem;
+  }
+
+}
+
+@media screen and (max-width: 1440px){
+
+  #recently-played div.card-homepage::after{
+    top: 5rem;
+    right: 1.5rem;
+    background-size: 2rem 2rem;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  #recently-played div.card-homepage:hover::after{
+    top: 4.5rem;
+  }
+
+}
+
+@media screen and (max-width: 1235px){
+
+  #recently-played div.card-homepage::after{
+    top: 4rem;
+  }
+
+  #recently-played div.card-homepage:hover::after{
+    top: 3rem;
+  }
+
+} */
+
+/* play and pause common to artist and album */
+
+.play-pause-pages {
+  font-size: 20px;
+  padding: 30px;
+  background-color: var(--buttons-green);
+}
+
+.play-pages {
+  color: white;
+}
+
+.pause-pages {
+  color: white;
+}
+
+.play-pause-pages:hover {
+  padding: 32px;
+}
+
+/* Artist page */
+
+/* Artist Nav */
+
+div#artist-nav-container {
+  margin-left: 20%;
+}
+
+/* Artist Header */
+
+div#artist-header-container {
+  margin-left: 20%;
+  color: white;
+  background: url("assets/queen-cover.png") #0a0304 center;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  height: 350px;
+}
+
+div#artist-header-container div.d-flex {
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+div#artist-header-container div.d-flex p.verified-artist {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+div#artist-header-container div.d-flex p.verified-artist span {
+  color: #2e77d0;
+  font-size: 16px;
+}
+
+div#artist-header-container div.d-flex h1 {
+  font-size: 96px;
+  line-height: 96px;
+  font-weight: 900;
+}
+
+div#artist-header-container div.d-flex p.listeners {
+  font-size: 16px;
+  line-height: 32px;
+}
+
+/*Main part of the artist page*/
+main {
+  width: 100%;
+  height: 3500px;
+  background: rgb(18, 18, 18);
+  background: linear-gradient(
+    0deg,
+    rgba(18, 18, 18, 1) 84%,
+    rgba(77, 5, 10, 1) 100%
+  );
+}
+
+/* Artist popular */
+
+div.artist-containers {
+  color: white;
+  margin-left: 20%;
+}
+
+/* Play pause follow section */
+
+div.artist-containers div.play-pause-follow {
+  align-items: center;
+}
+
+/* three dots drop down */
+
+.three-dots-dropdown button {
+  font-size: 30px;
+}
+
+.three-dots-dropdown {
+  display: inline-block;
+}
+
+.three-dots-dropdown button {
+  line-height: 0;
+  color: var(--white-gray);
+}
+
+.three-dots-dropdown button:hover {
+  background-color: transparent;
+  color: white;
+}
+
+.btn-outline-light:not(:disabled):not(.disabled).active,
+.btn-outline-light:not(:disabled):not(.disabled):active,
+.show > .btn-outline-light.dropdown-toggle {
+  color: white;
+  background-color: transparent;
+  border: 0;
+}
+
+.three-dots-dropdown .dropdown-menu {
+  background-color: var(--border-gray);
+  color: var(--white-gray);
+}
+
+.dropdown-menu a {
+  color: var(--white-gray);
+}
+
+.dropdown-menu a:hover {
+  background-color: var(--reproduction-gray);
+  color: white;
+}
+
+.dropdown-toggle::after {
+  content: none;
+}
+
+/*Popular songs Table  */
+
+h3.artist-h3 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.popular-table table {
+  color: white;
+}
+
+.popular-table table img {
+  width: 40px;
+  display: inline-block;
+}
+
+.popular-table th span.popular-table-heading {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.popular-table tr:hover {
+  background-color: rgba(75, 75, 75, 0.5);
+}
+
+/* Artist Pick */
+div.artist-pick div.d-flex > img {
+  width: 100px;
+  height: 100px;
+}
+
+div.artist-pick div.d-flex div p img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+div.artist-pick div.d-flex div p.playlist {
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--white-gray);
+}
+
+h4.best-of a {
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* Artist common rows */
+.common-rows div h3 + a {
+  color: var(--white-gray);
+}
+
+/* cards */
+.artist-song-cards {
+  background-color: var(--card-gray);
+  cursor: pointer;
+}
+
+.artist-song-cards .card-body h5 {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.artist-song-cards .card-body h5 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.artist-song-cards .card-body p {
+  color: var(--white-gray);
+}
+
+.artist-song-cards:hover {
+  background-color: var(--border-gray);
+}
+
+/* Play on hover cards */
+/* square images */
+.play-artist-cards {
+  right: -20px;
+  bottom: 4px;
+}
+
+/* circular images */
+div.fans-also-like div.position-relative .play-artist-cards {
+  right: 15px;
+  bottom: 30px;
+}
+
+/* Fans Also like section */
+div.fans-also-like div.position-relative {
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+/* About section */
+
+div.about-col div.position-relative {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+div.about-col div.position-relative::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: rgba(255, 255, 255, 0.2);
+  z-index: 5;
+}
+
+div.about-col div.position-relative img {
+  width: 100%;
+}
+
+div.about-col div.position-relative div.circular-badge {
+  color: white;
+  background-color: #2e77d0;
+  border-radius: 50%;
+  top: 35px;
+  right: 35px;
+  width: 90px;
+  height: 90px;
+  z-index: 6;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+div.about-col div.position-relative div.circular-badge span.place-world {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 0px;
+}
+
+div.about-col div.position-relative div.circular-badge span.in-the-world {
+  font-size: 11px;
+  line-height: 0px;
+}
+
+div.about-col div.position-relative div.about-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  left: 40px;
+  bottom: 40px;
+  text-shadow: 1px 1px 0px #000000;
+  z-index: 6;
+}
+
+div.about-col div.position-relative div.about-text p.listeners-about {
+  font-weight: 700;
+}
+
+div.about-col div.position-relative div.about-text p.queen-about {
+  width: 70%;
+}
+
+/* On Tour*/
+
+div.concert-date {
+  color: white;
+  background-color: #2a2a2a;
+  top: 35px;
+  right: 35px;
+  border-radius: 5px;
+  width: 75px;
+  height: 60px;
+  z-index: 6;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+div.concert-date span.concert-date-month {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 0px;
+}
+
+div.concert-date span.concert-date-day {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 0px;
+}
+
+div.artist-concerts
+  > div.d-flex
+  div.concert-date
+  + div.d-flex
+  p.concert-artist {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+div.artist-concerts > div.d-flex div.concert-date + div.d-flex p.concert-place {
+  font-size: 14px;
+  color: var(--white-gray);
+}
+
+div.artist-concerts > div.d-flex div.concert-date + div.d-flex div {
+  line-height: 16px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+div.artist-concerts a {
+  font-size: 14px;
+  color: var(--white-gray);
+  font-weight: 700;
+}
+
+div.artist-concerts {
+  cursor: pointer;
+}
+
+/* offers */
+
+div.artist-offers img {
+  width: 80px;
+  height: 80px;
+}
+
+div.artist-offers > div.d-flex div {
+  line-height: 16px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+div.artist-offers > div.d-flex div p.artist-offer-title {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+div.artist-offers > div.d-flex div p.artist-offer-description {
+  font-size: 14px;
+  color: var(--white-gray);
+}
+
+div.artist-offers > div.d-flex {
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+div.artist-offers > div.d-flex:hover {
+  background-color: var(--border-gray);
 }
